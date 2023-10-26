@@ -1,0 +1,7 @@
+# dependencies
+node-modules
+
+#misc
+
+# Secrets
+process.env
