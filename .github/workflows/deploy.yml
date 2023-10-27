@@ -24,18 +24,18 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ .env.AWS_ACCESS_ID }}
-          aws-secret-access-key: ${{ .env.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ env.AWS_ACCESS_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
       - name: Upload to AWS S3
         run: aws s3 sync ../frontend/photos s3://jackc.baylor-jax-art 
         env: 
-          AWS_ACCESS_ID: ${{ .env.AWS_ACCESS_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ .env.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_ID: ${{ env.AWS_ACCESS_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
 
       - name: Delete images for reload
         run: aws s3 rm ../frontend/photos s3://jackc.balor-jax-art --recursive 
         with: 
-          aws-access-key-id: ${{ .env.AWS_ACCESS_ID }}
-          aws-secret-access-key: ${{ .env.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ env.AWS_ACCESS_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
