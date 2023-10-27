@@ -26,7 +26,7 @@ jobs:
         env:
           AWS_ACCESS_ID: ${{ env.AWS_ACCESS_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: us-east-2
 
       - name: Upload to AWS S3
         run: aws s3 sync ../backend/art-images s3://jackc.baylor-jax-art 
