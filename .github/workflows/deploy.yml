@@ -24,8 +24,8 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-id-key: ${{ process.env.AWS_ACCESS_ID }}
-          aws-secret-access-key: ${{ process.env.AWS_SECRET_ACCESS_KEY }}
+          aws-access-id-key: ${{ env.AWS_ACCESS_ID }}
+          aws-secret-access-key: ${{ env.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
       - name: Upload to AWS S3

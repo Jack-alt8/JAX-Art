@@ -10,9 +10,10 @@
   "author": "Jack-alt8",
   "license": "ISC",
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.435.0"
+    "@aws-sdk/client-s3": "^3.435.0",
+    "aws-sdk": ""
   },
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
