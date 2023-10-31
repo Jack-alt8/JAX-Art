@@ -65,7 +65,11 @@ header {
 }
 
 .primary-icon {
+  width: 32px;
   height: 32px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .contact-content {
