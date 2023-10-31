@@ -34,15 +34,13 @@ jobs:
           aws-region: us-east-2
 
       - name: Upload to AWS S3
-        working-directory: ./backend
-        run: aws s3 sync ../backend/art-images s3://jackc.baylor-jax-art 
+        run: aws s3 sync ${{ ../backend/art-images }} s3://jackc.baylor-jax-art 
         env: 
           AWS_ACCESS_ID: ${{ env.AWS_ACCESS_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
 
       - name: Delete images for reload
-        working-directory: ./backend
-        run: aws s3 rm ../backend/art-images s3://jackc.balor-jax-art --recursive 
+        run: aws s3 rm ${{ ../backend/art-images }} s3://jackc.balor-jax-art --recursive 
         env: 
           AWS_ACCESS_ID: ${{ env.AWS_ACCESS_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
