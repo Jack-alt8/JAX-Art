@@ -40,7 +40,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
 
       - name: Delete images for reload
-        run: aws s3 rm ./backend/artimages s3://jackc.balor-jax-art --recursive 
+        run: aws s3 rm ./backend/artimages s3://jackc.baylor-jax-art --recursive 
         env: 
           AWS_ACCESS_ID: ${{ env.AWS_ACCESS_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ env.AWS_SECRET_ACCESS_KEY }}
