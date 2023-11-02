@@ -22,12 +22,12 @@ header {
   left: 0;
   width: 100%;
   background-color: black;
-  border: 3px solid #8b48ff;
+  border: 3px solid #aa14f0;
   padding: 10px;
 }
 
 .navbar {
-  background-color: black;
+  background-color: #bc8cf2;
   font-size: 20px;
 }
 
@@ -117,7 +117,7 @@ nav > ul > li {
 }
 
 .navbar a {
-  color: #8e8e8e;
+  color: #585858;
   text-decoration: none;
 }
 
@@ -173,6 +173,13 @@ h1 {
   margin-top: 0.5em;
 }
 
+/*
+-----------------------------------------------------------------------
+Button properties
+-----------------------------------------------------------------------
+*/
+
+/*nav styles*/
 .nav-list .list-item a:hover {
   color: #dddddd;
   padding: 0px 125px 7px;
@@ -193,6 +200,23 @@ h1 {
 
 .contact-content img:active {
   filter: invert(100%);
+}
+
+/*footer github link styles*/
+.circle :hover {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
+}
+
+.circle :active {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
 }
 
 .menu {
