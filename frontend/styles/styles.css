@@ -27,7 +27,7 @@ header {
 }
 
 .navbar {
-  background-color: #bc8cf2;
+  background-color: black;
   font-size: 20px;
 }
 
@@ -67,6 +67,7 @@ header {
 .primary-icon {
   width: 32px;
   height: 32px;
+  display: flex;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -93,7 +94,6 @@ header {
 
 .menu {
   display: flex;
-  align-self: flex-end;
 }
 
 nav > ul {
@@ -129,23 +129,11 @@ main {
   min-height: 85%;
 }
 
-.artimages {
-  display: flex;
-  margin-top: auto;
-  padding-top: 5em;
-  align-items: center;
-}
-
-.artimages img {
-  height: 15em;
-  width: 15em;
-}
-
 /*
 -----------------------------------------------------------------------------
 Art images slider for home page
 -----------------------------------------------------------------------------
-*/ 
+*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -163,7 +151,7 @@ Art images slider for home page
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -192,7 +180,7 @@ Art images slider for home page
   color: #353535;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -203,8 +191,25 @@ Art images slider for home page
   color: #000000;
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
   top: 0;
+}
+
+/*
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+*/
+
+.artimages {
+  display: flex;
+  margin-top: auto;
+  padding-top: 5em;
+  align-items: center;
+}
+
+.artimages img {
+  height: 15em;
+  width: 15em;
 }
 
 p {
@@ -325,10 +330,20 @@ Button properties
   }
 
   .menu {
-    display: block;
-    position: absolute;
+    display: flex;
+    position: fixed;
     right: 15px;
     top: 15px;
+  }
+
+  button {
+    background-color: #000000;
+  }
+
+  button img {
+    filter: invert(75%);
+    width: 32px;
+    height: 32px;
   }
 
   .nav-list {
@@ -349,6 +364,14 @@ Button properties
     margin-top: 10px;
   }
 
+  button img:active{
+    filter: invert(100%);
+  }
+
+  button img:hover{
+    filter: invert(100%);
+  }
+
   .active {
     display: block;
   }
@@ -366,7 +389,7 @@ Button properties
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #8b48ff;
+    background-color: black;
   }
 
   .nav-list {
