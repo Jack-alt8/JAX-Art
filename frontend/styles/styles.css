@@ -92,10 +92,6 @@ header {
     filter: invert(75%);
 }
 
-.menu {
-  display: flex;
-}
-
 nav > ul {
   display: inline;
   padding: 0;
