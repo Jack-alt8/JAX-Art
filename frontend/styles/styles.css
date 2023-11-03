@@ -22,7 +22,7 @@ header {
   left: 0;
   width: 100%;
   background-color: black;
-  border: 3px solid #aa14f0;
+  border: 3px solid #aa14f0;  
   padding: 10px;
 }
 
@@ -317,7 +317,16 @@ Button properties
 
 @media only screen and (max-width: 755px) {
   .nav-list .container-icon {
-    width: 100%;
+    width: 100%;  
+  }
+
+  header {
+    padding-left: 0px;
+  }
+
+  .nav-list {
+    border: 3px solid #aa14f0;
+    padding: 0.5em;  
   }
 
   .navbar {
