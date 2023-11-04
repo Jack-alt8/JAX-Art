@@ -322,6 +322,7 @@ Button properties
 
   header {
     padding-left: 0px;
+    padding-right: 0px;
   }
 
   .nav-list {
@@ -383,6 +384,9 @@ Button properties
 }
 
 @media only screen and (min-width: 756px) {
+  header {
+    flex-direction: column;
+  }
 
   .corner {
     padding: 10px;
@@ -391,14 +395,16 @@ Button properties
   .navbar {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column; 
     justify-content: space-between;
-    align-items: center;
+    align-items: start; 
     background-color: black;
   }
 
   .nav-list {
+    display: flex;
     padding: 10px;
+    flex-direction: column;  
   }
 
   main {
@@ -407,6 +413,23 @@ Button properties
 
   aside {
     margin-right: 2%;
+  }
+
+  /*need to edit these styles! 
+  look up how to create a sidebar nav for computer view*/
+    /*nav styles*/
+  .nav-list .list-item a:hover {
+    color: #dddddd;
+    padding: 0px 125px 0px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
+  .nav-list .list-item a:active {
+    color: #dddddd;
+    padding: 0px 125px 7px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
   }
 
   .columns-desktop {
