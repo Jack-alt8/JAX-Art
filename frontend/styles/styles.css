@@ -22,7 +22,7 @@ header {
   left: 0;
   width: 100%;
   background-color: black;
-  border: 3px solid #8b48ff;
+  border: 3px solid #aa14f0;  
   padding: 10px;
 }
 
@@ -65,7 +65,11 @@ header {
 }
 
 .primary-icon {
+  width: 32px;
   height: 32px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .contact-content {
@@ -85,11 +89,6 @@ header {
 .vsco {
     height: 20px;
     filter: invert(75%);
-}
-
-.menu {
-  display: flex;
-  align-self: flex-end;
 }
 
 nav > ul {
@@ -113,15 +112,99 @@ nav > ul > li {
 }
 
 .navbar a {
-  color: #8e8e8e;
+  color: #585858;
   text-decoration: none;
 }
 
 main {
-  display: block;
+  display: flex;
+  margin-top: auto;
   padding-top: 3em;
   padding-bottom: 3em;
   min-height: 85%;
+}
+
+/*
+-----------------------------------------------------------------------------
+Art images slider for home page
+-----------------------------------------------------------------------------
+*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: fit-content;
+  position: relative;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgba(190, 190, 190, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #353535;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/*
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+*/
+
+.artimages {
+  display: flex;
+  margin-top: auto;
+  padding-top: 5em;
+  align-items: center;
+}
+
+.artimages img {
+  height: 15em;
+  width: 15em;
 }
 
 p {
@@ -169,6 +252,13 @@ h1 {
   margin-top: 0.5em;
 }
 
+/*
+-----------------------------------------------------------------------
+Button properties
+-----------------------------------------------------------------------
+*/
+
+/*nav styles*/
 .nav-list .list-item a:hover {
   color: #dddddd;
   padding: 0px 125px 7px;
@@ -191,25 +281,80 @@ h1 {
   filter: invert(100%);
 }
 
+.logo img:hover {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
+}
+
+.logo img:active {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
+}
+
+/*footer github link styles*/
+.circle img:hover {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
+}
+
+.circle img:active {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0030ff;
+  border-radius: 50%;
+}
+
 .menu {
   display: none;
 }
 
 @media only screen and (max-width: 755px) {
   .nav-list .container-icon {
-    width: 100%;
+    width: 100%;  
+  }
+
+  header {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .corner {
+    padding-bottom: 5px;
+  }
+
+  .nav-list {
+    border: 3px solid #aa14f0;
+    padding: 0.5em;  
   }
 
   .navbar {
     flex-direction: column;
     position: relative;
+    border-top: 6px;
   }
 
   .menu {
-    display: block;
-    position: absolute;
+    display: flex;
+    position: fixed;
     right: 15px;
     top: 15px;
+  }
+
+  button {
+    background-color: #000000;
+  }
+
+  button img {
+    filter: invert(75%);
+    width: 32px;
+    height: 32px;
   }
 
   .nav-list {
@@ -230,12 +375,23 @@ h1 {
     margin-top: 10px;
   }
 
+  button img:active{
+    filter: invert(100%);
+  }
+
+  button img:hover{
+    filter: invert(100%);
+  }
+
   .active {
     display: block;
   }
 }
 
 @media only screen and (min-width: 756px) {
+  header {
+    flex-direction: column;
+  }
 
   .corner {
     padding: 10px;
@@ -244,14 +400,16 @@ h1 {
   .navbar {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column; 
     justify-content: space-between;
-    align-items: center;
-    background-color: #8b48ff;
+    align-items: start; 
+    background-color: black;
   }
 
   .nav-list {
+    display: flex;
     padding: 10px;
+    flex-direction: column;  
   }
 
   main {
@@ -260,6 +418,22 @@ h1 {
 
   aside {
     margin-right: 2%;
+  }
+
+  /*need to edit these styles! look up how to create a sidebar nav for computer view*/
+    /*nav styles*/
+  .nav-list .list-item a:hover {
+    color: #dddddd;
+    padding: 0px 125px 0px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
+  .nav-list .list-item a:active {
+    color: #dddddd;
+    padding: 0px 125px 7px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
   }
 
   .columns-desktop {
