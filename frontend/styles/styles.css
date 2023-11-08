@@ -224,10 +224,19 @@ footer {
   color: #9D9D9D;
 }
 
+.copyright {
+  display: flex;
+  align-items: baseline;
+}
+
+.github-space {
+  margin: 5px;
+}
+
 .github {
     height: 40px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 aside,
@@ -281,6 +290,7 @@ Button properties
   filter: invert(100%);
 }
 
+/*coffee icon button for home*/
 .logo img:hover {
   width: 32px;
   height: 32px;
