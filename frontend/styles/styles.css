@@ -314,7 +314,7 @@ Button properties
   display: none;
 }
 
-@media only screen and (max-width: 755px) {
+@media only screen and (max-width: 767px) {
   .nav-list .container-icon {
     width: 100%;  
   }
@@ -388,7 +388,7 @@ Button properties
   }
 }
 
-@media only screen and (min-width: 756px) {
+@media only screen and (min-width: 768px) {
   header {
     flex-direction: column;
   }
