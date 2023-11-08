@@ -1,3 +1,6 @@
+// Whole-script strict mode syntax
+"use strict";
+
 /**
  * (SDK)
  * 1. Follow aws instructions to request an item in my aws bucket
@@ -24,7 +27,7 @@ const api = require("./api");
 app.use(express.json());
 
 //replace https with url for where I host website
-const whitelist = ['http://127.0.0.1', 'http://127.0.0.1:5500'];
+const whitelist = ["http://127.0.0.1", "http://127.0.0.1:5500"];
 const corsOptions = {
   origin: (origin, callback) => {
     if (!origin || whitelist.indexOf(origin) !== -1) {
@@ -33,19 +36,19 @@ const corsOptions = {
       callback(new Error("Not allowed by CORS"));
     }
   },
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
 };
 
 app.use(cors(corsOptions));
 
 const limiter = rateLimit({
   windowMs: 1000,
-  max: 1
+  max: 1,
 });
 app.use(limiter);
 
 //test route
-app.get("/", (req, res) => res.json({ success: "Hello World!"}));
+app.get("/", (req, res) => res.json({ success: "Hello World!" }));
 
 app.use("/api", api);
 
@@ -56,4 +59,3 @@ app.listen(port, () => console.log(`App listening on port ${port}`));
  * Requesting an item in aws bucket
  * -----------------------------------------------------------------------------------------------------
  */
-
