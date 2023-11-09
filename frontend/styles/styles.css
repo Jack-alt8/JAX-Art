@@ -44,6 +44,19 @@ header {
     flex-wrap: wrap;
 }
 
+.logo img {
+  border: 2px transparent;
+  margin: 5px;
+}
+
+.primary-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
 .main-title {
   font-size: 18px;
   display: flex;
@@ -62,14 +75,6 @@ header {
 .sub-title {
   font-size: 14px;
   display: flex;
-}
-
-.primary-icon {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  overflow: hidden;
-  border-radius: 50%;
 }
 
 .contact-content {
@@ -125,9 +130,9 @@ main {
 }
 
 /*
------------------------------------------------------------------------------
-Art images slider for home page
------------------------------------------------------------------------------
+=============================================================================
+Home page styles
+=============================================================================
 */
 
 /* Slideshow container */
@@ -229,7 +234,7 @@ footer {
   align-items: baseline;
 }
 
-.github-space {
+.circle nav{
   margin: 5px;
 }
 
@@ -238,6 +243,12 @@ footer {
     background-color: white;
     border-radius: 50%;
 }
+
+/*
+==============================================================
+About page styles
+==============================================================
+*/
 
 aside,
 article {
@@ -294,14 +305,14 @@ Button properties
 .logo img:hover {
   width: 32px;
   height: 32px;
-  border: 2px solid #0030ff;
+  border: solid #0030ff;
   border-radius: 50%;
 }
 
 .logo img:active {
   width: 32px;
   height: 32px;
-  border: 2px solid #0030ff;
+  border: solid #0030ff;
   border-radius: 50%;
 }
 
@@ -324,6 +335,11 @@ Button properties
   display: none;
 }
 
+/*
+----------------------------------------------------------------------
+Mobile view styles
+----------------------------------------------------------------------
+*/
 @media only screen and (max-width: 767px) {
   .nav-list .container-icon {
     width: 100%;  
@@ -398,6 +414,11 @@ Button properties
   }
 }
 
+/*
+--------------------------------------------------------------------------------
+Computer view styles
+--------------------------------------------------------------------------------
+*/
 @media only screen and (min-width: 768px) {
   header {
     flex-direction: column;
