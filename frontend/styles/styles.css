@@ -22,7 +22,7 @@ header {
   left: 0;
   width: 100%;
   background-color: black;
-  border: 3px solid #aa14f0;  
+  border: 3px solid #aa14f0;
   padding: 10px;
 }
 
@@ -39,9 +39,9 @@ header {
 }
 
 .corner-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .logo img {
@@ -82,18 +82,18 @@ header {
 }
 
 .instagram {
-    height: 20px;
-    filter: invert(75%);
+  height: 20px;
+  filter: invert(75%);
 }
 
 .youtube {
-    height: 20px;
-    filter: invert(75%);
+  height: 20px;
+  filter: invert(75%);
 }
 
 .vsco {
-    height: 20px;
-    filter: invert(75%);
+  height: 20px;
+  filter: invert(75%);
 }
 
 nav > ul {
@@ -149,7 +149,8 @@ Home page styles
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: relative;
   top: 50%;
@@ -171,7 +172,8 @@ Home page styles
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   color: rgba(190, 190, 190, 0.8);
 }
 
@@ -226,7 +228,7 @@ footer {
   width: auto;
   padding: 10px;
   background-color: #393939;
-  color: #9D9D9D;
+  color: #9d9d9d;
 }
 
 .copyright {
@@ -234,14 +236,14 @@ footer {
   align-items: baseline;
 }
 
-.circle nav{
+.circle nav {
   margin: 5px;
 }
 
 .github {
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /*
@@ -260,7 +262,7 @@ aside {
 }
 
 img > aside {
-    margin-top: 5em;
+  margin-top: 5em;
 }
 
 article {
@@ -342,7 +344,7 @@ Mobile view styles
 */
 @media only screen and (max-width: 767px) {
   .nav-list .container-icon {
-    width: 100%;  
+    width: 100%;
   }
 
   header {
@@ -357,7 +359,7 @@ Mobile view styles
 
   .nav-list {
     border: 3px solid #aa14f0;
-    padding: 0.5em;  
+    padding: 0.5em;
   }
 
   .navbar {
@@ -401,11 +403,11 @@ Mobile view styles
     margin-top: 10px;
   }
 
-  button img:active{
+  button img:active {
     filter: invert(100%);
   }
 
-  button img:hover{
+  button img:hover {
     filter: invert(100%);
   }
 
@@ -421,7 +423,12 @@ Computer view styles
 */
 @media only screen and (min-width: 768px) {
   header {
+    display: flex;
     flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 85%;
+    width: 25%;
   }
 
   .corner {
@@ -431,19 +438,33 @@ Computer view styles
   .navbar {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: space-between;
-    align-items: start; 
+    align-items: start;
     background-color: black;
+    height: 100%;
+    width: 160px;
+    z-index: 1;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 15px;
   }
 
   .nav-list {
     display: flex;
     padding: 10px;
-    flex-direction: column;  
+    flex-direction: column;
   }
 
-  main {
+  .navbar a {
+    font-size: 25px;
+    display: flex;
+    font-size: 20px;
+  }
+
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
     display: flex;
   }
 
@@ -452,22 +473,21 @@ Computer view styles
   }
 
   /*need to edit these styles! look up how to create a sidebar nav for computer view*/
-    /*nav styles*/
+  /*nav styles*/
   .nav-list .list-item a:hover {
+    display: flex;
     color: #dddddd;
-    padding: 0px 125px 0px;
+    padding: 0 10px 7px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
   .nav-list .list-item a:active {
+    display: flex;
     color: #dddddd;
-    padding: 0px 125px 7px;
+    padding: 0 10px 7px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
-  .columns-desktop {
-    display: flex;
-  }
 }
