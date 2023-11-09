@@ -423,16 +423,12 @@ Computer view styles
 */
 @media only screen and (min-width: 768px) {
   header {
-    display: flex;
     flex-direction: column;
     top: 0;
     left: 0;
     height: 85%;
-    width: 25%;
-  }
-
-  .corner {
-    padding: 10px;
+    width: 23%;
+    padding: 0.5em 0.5em 0.8em 0.5em;
   }
 
   .navbar {
@@ -440,32 +436,45 @@ Computer view styles
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
     background-color: black;
+    padding-top: 15px;
+    height: 100%;
+  }
+  /*
+    align-items; start;
     height: 100%;
     width: 160px;
     z-index: 1;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 15px;
   }
+  */
 
   .nav-list {
     display: flex;
     padding: 10px;
     flex-direction: column;
-  }
-
-  .navbar a {
-    font-size: 25px;
-    display: flex;
+    align-items: center;
     font-size: 20px;
   }
 
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
+  nav > ul {
     display: flex;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: flex;
+    list-style: none;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .nav-list .list-item {
+    display: flex;
+    padding: 10px 10px;
+  }
+
+  main {
+    margin-left: 170px; /* Same as the width of the sidenav */
+    padding: 0 10px 1.6em;
   }
 
   aside {
@@ -477,7 +486,7 @@ Computer view styles
   .nav-list .list-item a:hover {
     display: flex;
     color: #dddddd;
-    padding: 0 10px 7px;
+    padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
@@ -485,9 +494,8 @@ Computer view styles
   .nav-list .list-item a:active {
     display: flex;
     color: #dddddd;
-    padding: 0 10px 7px;
+    padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
-
 }
