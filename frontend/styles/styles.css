@@ -376,7 +376,8 @@ Mobile view styles
     right: 15px;
     top: 15px;
   }
-
+  
+  /*hamburger styles*/
   button {
     background-color: #000000;
   }
@@ -405,6 +406,7 @@ Mobile view styles
     margin-top: 10px;
   }
 
+  /*hamburger menu action styles*/
   button img:active {
     filter: invert(100%);
   }
@@ -435,7 +437,7 @@ Computer view styles
     flex-direction: column;
     top: 0;
     left: 0;
-    height: 81%;
+    height: 83%;
     width: 23%;
     padding: 0.5em 0.5em 0.8em 0.5em;
   }
@@ -446,43 +448,33 @@ Computer view styles
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
-    padding-top: 15px;
+    padding-top: 30px;
     height: 100%;
+    width: 100%;
   }
-  /*
-    align-items; start;
-    height: 100%;
-    width: 160px;
-    z-index: 1;
-  }
-  */
 
   .nav-list {
     display: flex;
-    padding: 10px;
     flex-direction: column;
     align-items: center;
-  }
-
-  nav > ul {
-    display: flex;
-    padding: 0;
-  }
-
-  nav > ul > li {
-    display: flex;
-    list-style: none;
-    margin: 5px 5px 5px 5px;
+    width: 100%;
+    padding-top: 10px;
   }
 
   .nav-list .list-item {
-    display: flex;
-    padding: 10px 10px;
+    display: block;
+    padding: 15px;
+    border-top: 1px;
+  }
+
+  nav > ul > li {
+    list-style: none;
+    margin: 0 5px;
   }
 
   main {
     margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0 10px 0.3em;
+    padding: 0 10px 1em;
   }
 
   aside {
@@ -491,7 +483,6 @@ Computer view styles
   }
 
   aside img {
-    
     width: 160px;
     height: 120px;
   }
@@ -499,7 +490,6 @@ Computer view styles
   /*need to edit these styles! look up how to create a sidebar nav for computer view*/
   /*nav styles*/
   .nav-list .list-item a:hover {
-    display: flex;
     color: #dddddd;
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
@@ -507,7 +497,6 @@ Computer view styles
   }
 
   .nav-list .list-item a:active {
-    display: flex;
     color: #dddddd;
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
