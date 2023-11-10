@@ -59,7 +59,7 @@ header {
   height: 32px;
   border: 2px solid transparent;
   border-radius: 50%;
-  margin: 2px 7px 2px 0;
+  margin: 0 7px 2px 0;
 }
 
 .primary-icon {
@@ -70,7 +70,7 @@ header {
 }
 
 .title-content {
-  margin: 3px 2px 2px;
+  margin: 0 2px 2px;
 }
 
 .main-title {
@@ -362,13 +362,15 @@ Mobile view styles
   }
 
   header {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
+    padding: 5px 0 0;
   }
 
   .corner {
     padding-bottom: 5px;
+  }
+
+  .corner-content {
+    padding-top: 2px;
   }
 
   .nav-list {
@@ -456,6 +458,10 @@ Computer view styles
     height: 83%;
     width: 23%;
     padding: 0.5em 0.5em 0.8em 0.5em;
+  }
+
+  .title-content {
+    margin-top: 2px;
   }
 
   .navbar {
