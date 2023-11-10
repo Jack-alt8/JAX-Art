@@ -45,16 +45,32 @@ header {
 }
 
 .logo img {
-  border: 2px transparent;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 50%;
   margin: 5px;
+}
+
+.logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  margin: 2px 7px 2px 0;
 }
 
 .primary-icon {
   width: 32px;
   height: 32px;
-  display: flex;
   overflow: hidden;
   border-radius: 50%;
+}
+
+.title-content {
+  margin: 3px 2px 2px;
 }
 
 .main-title {
@@ -236,12 +252,9 @@ footer {
   align-items: baseline;
 }
 
-.circle nav {
-  margin: 5px;
-}
-
 .github {
-  height: 40px;
+  display: block;
+  height: 30px;
   background-color: white;
   border-radius: 50%;
 }
@@ -255,10 +268,6 @@ About page styles
 aside,
 article {
   padding: 1em;
-}
-
-aside {
-  text-align: center;
 }
 
 img > aside {
@@ -306,6 +315,15 @@ Button properties
 }
 
 /*coffee icon button for home*/
+.logo img {
+  display: block;
+  
+}
+
+nav > img {
+  margin: 0 5px;
+}
+
 .logo img:hover {
   width: 32px;
   height: 32px;
@@ -322,17 +340,11 @@ Button properties
 
 /*footer github link styles*/
 .circle img:hover {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #0030ff;
-  border-radius: 50%;
+  filter: invert(85%);
 }
 
 .circle img:active {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #0030ff;
-  border-radius: 50%;
+  filter: invert(85%);
 }
 
 .menu {
@@ -376,7 +388,7 @@ Mobile view styles
     right: 15px;
     top: 15px;
   }
-  
+
   /*hamburger styles*/
   button {
     background-color: #000000;
@@ -413,6 +425,10 @@ Mobile view styles
 
   button img:hover {
     filter: invert(100%);
+  }
+
+  aside {
+    text-align: center;
   }
 
   aside img {
@@ -479,7 +495,6 @@ Computer view styles
 
   aside {
     margin-right: 2%;
-
   }
 
   aside img {
