@@ -293,34 +293,50 @@ Contact page styles
 
 .contact-container {
   padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-title h1 {
-  font-size: 10px;
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+  width: 90%;
+  max-width: 600px;
 }
 
-#contact-form form{
+form h3 {
+  color: #9d9d9d;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form, .placeholders h4 {
+  color: #585858;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
   padding: 0.5em;
+  outline: none;
+  background: #cccccc;
+  font-size: 16px;
 }
 
-.name-input {
-  padding: 0.5em;
-}
-
-.email-input {
-  padding: 0.5em;
-}
-
-.subject-input {
-  padding: 0.5em;
-}
-
-.message-input {
-  padding: 0.5em;
-}
-
-.placeholders h2 {
-  color: #393939;
+.submit-button {
+  padding: 15px;
+  background: #aa14f0;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 10px;
 }
 
 .required-error p {
@@ -334,10 +350,6 @@ Contact page styles
   margin-top: 0px;
   margin-bottom: 24px;
   display: none;
-}
-
-.contact-button {
-  padding: 3em 0.5em 0;
 }
 
 /*
@@ -372,7 +384,6 @@ Button properties
 /*coffee icon button for home*/
 .logo img {
   display: block;
-  
 }
 
 nav > img {
@@ -447,11 +458,11 @@ Mobile view styles
   }
 
   /*hamburger styles*/
-  button {
+  .menu {
     background-color: #000000;
   }
 
-  button img {
+  .menu img {
     filter: invert(75%);
     width: 32px;
     height: 32px;
@@ -512,14 +523,9 @@ Computer view styles
     top: 0;
     left: 0;
     height: 90%;
-    width: 27%;
+    width: 30%;
     padding: 0;
-    border: 1px solid #aa14f0;
-  }
-
-  .corner-content {
-    padding: 0.3em 1.3em 0.3em 0.3em;
-    border: 3px solid #aa14f0;
+    border: 2px solid #aa14f0;
   }
 
   .title-content {
@@ -529,6 +535,7 @@ Computer view styles
 
   .sidebar {
     border: 3px solid #aa14f0;
+    border-top: 5px solid #aa14f0;
     height: 100%;
   }
 
@@ -564,9 +571,9 @@ Computer view styles
   main {
     width: 70%;
     min-height: 85%;
-    padding: 8em 1em 5em 0.5em;
+    padding: 8em 0 5em;
     margin-top: 0.1em;
-    margin-left: 27%;
+    margin-left: 30%;
     top: 0;
     right: 0;
   }
