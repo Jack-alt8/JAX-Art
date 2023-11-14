@@ -451,17 +451,30 @@ Computer view styles
 --------------------------------------------------------------------------------
 */
 @media only screen and (min-width: 768px) {
+
   header {
     flex-direction: column;
     top: 0;
     left: 0;
-    height: 83%;
-    width: 23%;
-    padding: 0.5em 0.5em 0.8em 0.5em;
+    height: 90%;
+    width: 27%;
+    padding: 0;
+    border: 1px solid #aa14f0;
+  }
+
+  .corner-content {
+    padding: 0.3em 1.3em 0.3em 0.3em;
+    border: 3px solid #aa14f0;
   }
 
   .title-content {
     margin-top: 2px;
+    padding-right: 0.5em;
+  }
+
+  .sidebar {
+    border: 3px solid #aa14f0;
+    height: 100%;
   }
 
   .navbar {
@@ -471,7 +484,6 @@ Computer view styles
     justify-content: space-between;
     background-color: black;
     padding-top: 30px;
-    height: 100%;
     width: 100%;
   }
 
@@ -495,8 +507,13 @@ Computer view styles
   }
 
   main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    padding: 0 10px 1em;
+    width: 70%;
+    min-height: 85%;
+    padding: 8em 1em 5em 0.5em;
+    margin-top: 0.1em;
+    margin-left: 27%;
+    top: 0;
+    right: 0;
   }
 
   aside {
@@ -508,7 +525,6 @@ Computer view styles
     height: 120px;
   }
 
-  /*need to edit these styles! look up how to create a sidebar nav for computer view*/
   /*nav styles*/
   .nav-list .list-item a:hover {
     color: #dddddd;
