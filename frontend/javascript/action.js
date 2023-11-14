@@ -10,6 +10,12 @@ toggleButton.addEventListener("click", () =>
 );
 
 /**
+ * ===============================================================
+ * Home page functionality
+ * ===============================================================
+ */
+
+/**
  * ---------------------------------------------------------------
  * Image slider
  * ---------------------------------------------------------------
@@ -42,3 +48,26 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+/**
+ * ==============================================================
+ * Contact page functionality
+ * ==============================================================
+ */
+
+//contact form
+const name = document.getElementById('personsname');
+const contactForm = document.getElementById('contact-form');
+const emailErrorPara = document.getElementById('email-error')
+
+personsname.addEventListener('input', function() {
+  const pattern = /^[\w]{6,8}$/;
+  const currentValue = e.target.value;
+  const valid = pattern.test(currentValue)
+
+  if(valid) {
+    emailErrorPara.style.display = 'none'
+  } else {
+    emailErrorPara.style.display = 'block'
+  }
+})

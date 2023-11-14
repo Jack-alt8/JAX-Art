@@ -58,15 +58,34 @@
     <main>
         <section class="contact-container" id="contact">
         
-            <div class="contact-email">
-        
-                <h1>Connect</h1>
-        
-                <p>Email me at: <a href="mailto:jackc.baylor@gmail.com" target="_blank" class="sqs-svg-icon--wrapper email"
-                        aria-label="jackc.baylor@gmail.com">jackc.baylor@gmail.com</a></p>
-        
-            </div>
-        
+            <h1 class="contact-title">Contact Jack C. Baylor</h1>
+
+            <form id="contact-form" action="">
+                <div class="name-input">
+                    <h2 class="placeholders">Name</h2>
+                    <p class="required-error">(required)</p>
+                    <input id="personsname" type="text" name="name" required>
+                </div>
+                <div class="email-input">
+                    <h2 class="placeholders">Email</h2>
+                    <p class="required-error">(required)</p>
+                    <p id="email-error">please make sure your email address is entered correctly</p>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div class="subject-input">
+                    <h2 class="placeholders">Subject</h2>
+                    <p class="required-error">(required)</p>
+                    <input id="subject" type="text" name="subject" required>
+                </div>
+                <div class="message-input">
+                    <h2 class="placeholders">Message</h2>
+                    <p class="required-error">(required)</p>
+                    <input id="message" type="text" name="message" required>
+                </div>
+                <div class="contact-button">
+                    <input id="submit-button" type="submit" value="">
+                </div>
+            </form>
         </section>
     </main>
 

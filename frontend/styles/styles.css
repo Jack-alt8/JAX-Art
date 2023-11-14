@@ -286,6 +286,61 @@ h1 {
 }
 
 /*
+=======================================================================
+Contact page styles
+=======================================================================
+*/
+
+.contact-container {
+  padding: 1em;
+}
+
+.contact-title h1 {
+  font-size: 10px;
+}
+
+#contact-form form{
+  padding: 0.5em;
+}
+
+.name-input {
+  padding: 0.5em;
+}
+
+.email-input {
+  padding: 0.5em;
+}
+
+.subject-input {
+  padding: 0.5em;
+}
+
+.message-input {
+  padding: 0.5em;
+}
+
+.placeholders h2 {
+  color: #393939;
+}
+
+.required-error p {
+  color: #9d9d9d;
+}
+
+.required-error {
+  color: red;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  display: none;
+}
+
+.contact-button {
+  padding: 3em 0.5em 0;
+}
+
+/*
 -----------------------------------------------------------------------
 Button properties
 -----------------------------------------------------------------------
