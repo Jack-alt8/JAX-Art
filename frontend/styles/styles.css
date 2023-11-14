@@ -264,6 +264,14 @@ footer {
 About page styles
 ==============================================================
 */
+.about-content {
+  padding: 1em 1em 0;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
 
 aside,
 article {
@@ -278,11 +286,6 @@ img > aside {
 
 article {
   width: 75%;
-}
-
-h1 {
-  font-size: 3em;
-  margin-top: 0.5em;
 }
 
 /*
@@ -441,6 +444,7 @@ Mobile view styles
 
   .nav-list {
     border: 3px solid #aa14f0;
+    border-top: 6px solid #aa14f0;
     padding: 0.5em;
   }
 
