@@ -421,6 +421,14 @@ nav > img {
   filter: invert(85%);
 }
 
+.gallery-view {
+  display: none;
+}
+
+.search-button {
+  display: none;
+}
+
 .menu {
   display: none;
 }
@@ -459,15 +467,12 @@ Mobile view styles
     border-top: 6px;
   }
 
+  /*hamburger styles*/
   .menu {
     display: flex;
     position: fixed;
     right: 15px;
     top: 15px;
-  }
-
-  /*hamburger styles*/
-  .menu {
     background-color: #000000;
   }
 
@@ -496,14 +501,70 @@ Mobile view styles
   }
 
   /*hamburger menu action styles*/
-  button img:active {
+  .menu img:active {
     filter: invert(100%);
   }
 
-  button img:hover {
+  .menu img:hover {
     filter: invert(100%);
   }
 
+  /*
+  ===========================================================
+  Home page styles (mobile view specific)
+  ===========================================================
+  */
+  /*gallery view button styles*/
+  .gallery-view {
+    display: flex;
+    position: fixed;
+    right: 135px;
+    top: 15px;
+    background-color: #000000;
+  }
+
+  .gallery-view img {
+    filter: invert(75%);
+    width: 32px;
+    height: 32px;
+  }
+
+  .gallery-view img:active {
+    filter: invert(100%);
+  }
+
+  .gallery-view img:hover {
+    filter: invert(100%);
+  }
+
+  /*search button styles*/
+  .search-button {
+    display: flex;
+    position: fixed;
+    right: 75px;
+    top: 15px;
+    background-color: #000000;
+  }
+
+  .search-button img {
+    filter: invert(75%);
+    width: 32px;
+    height: 32px;
+  }
+
+  .search-button img:active {
+    filter: invert(100%);
+  }
+
+  .search-button img:hover {
+    filter: invert(100%);
+  }
+
+  /*
+  ===========================================================
+  About page styles (mobile view specific)
+  ===========================================================
+  */
   aside {
     text-align: center;
   }
@@ -515,6 +576,7 @@ Mobile view styles
     height: "425px";
   }
 
+  /*Universal active class functionality (don't touch!)*/
   .active {
     display: block;
   }
