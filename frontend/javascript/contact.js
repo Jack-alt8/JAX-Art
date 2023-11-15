@@ -20,12 +20,14 @@ function sendEmail(){
     message => alert("Message has been sent!")
     );
 };
-
-const form = documtent.getElementById("contact-form");
-form.addEventListener("submit", sendEmail() => {});
-onsubmit = sendEmail() => {};
+debugger
+const form = document.getElementById("contact-form");
+console.log("Oh this was triggered.")
+form.addEventListener("submit", sendEmail);
+/*onsubmit = sendEmail() => {};
            reset(); 
            return false;
+*/
 
 //contact form check
 const name = document.getElementById('personsname');
