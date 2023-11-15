@@ -471,15 +471,18 @@ Mobile view styles
   .menu {
     display: flex;
     position: fixed;
-    right: 15px;
+    right: 10px;
     top: 15px;
     background-color: #000000;
+    outline: none;
+    cursor: pointer;
+    border: 0;
   }
 
   .menu img {
     filter: invert(75%);
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
   }
 
   .nav-list {
@@ -520,19 +523,30 @@ Mobile view styles
     display: none;
   }
 
+  .mobile-buttons-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   /*gallery view button styles*/
   .gallery-view {
     display: flex;
     position: fixed;
-    right: 135px;
+    right: 90px;
     top: 15px;
     background-color: #000000;
+    outline: none;
+    cursor: pointer;
+    border: 0;
   }
 
   .gallery-view img {
     filter: invert(75%);
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
   }
 
   .gallery-view img:active {
@@ -547,9 +561,12 @@ Mobile view styles
   .search-button {
     display: flex;
     position: fixed;
-    right: 75px;
+    right: 50px;
     top: 15px;
     background-color: #000000;
+    outline: none;
+    cursor: pointer;
+    border: 0;
   }
 
   .search-button img {
