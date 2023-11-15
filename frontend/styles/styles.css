@@ -639,7 +639,7 @@ Computer view styles
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
-    padding-top: 30px;
+    padding-top: 10px;
     width: 100%;
   }
 
@@ -662,6 +662,40 @@ Computer view styles
     margin: 0 5px;
   }
 
+  /*
+  ==================================================================
+  Home page styles (computer specific)
+  ==================================================================
+  */
+
+  .home-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .home-nav .list-item {
+    display: block;
+    padding: 15px;
+    border-top: 1px;
+  }
+
+  .home-nav .list-item a:hover {
+    color: #dddddd;
+    padding: 0 18px 1px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
+  .home-nav .list-item a:active {
+    color: #dddddd;
+    padding: 0 18px 1px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
   main {
     width: 70%;
     min-height: 85%;
@@ -672,6 +706,11 @@ Computer view styles
     right: 0;
   }
 
+  /*
+  ==========================================================
+  About page styles (computer view specific)
+  ==========================================================
+  */
   aside {
     margin-right: 2%;
   }
