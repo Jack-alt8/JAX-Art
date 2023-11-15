@@ -7,11 +7,12 @@
  * ==============================================================
  */
 
+//env config
+require("dotenv").config();
+
 function sendEmail(){
   Email.send({
-    Host: "smtp.gmail.com",
-    Username: "username",
-    Password: "password",
+    SecureToken: "process.env.SecureToken",
     To: "jackc.baylor@gmail.com",
     From: document.getElementById("email").value,
     Subject: document.getElementById("subject").value,
@@ -20,7 +21,7 @@ function sendEmail(){
     message => alert("Message has been sent!")
     );
 };
-debugger
+
 const form = document.getElementById("contact-form");
 console.log("Oh this was triggered.")
 form.addEventListener("submit", sendEmail);
