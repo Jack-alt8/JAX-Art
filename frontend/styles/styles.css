@@ -514,6 +514,12 @@ Mobile view styles
   Home page styles (mobile view specific)
   ===========================================================
   */
+
+  /*Hiding gallery and search links for mobile*/
+  .home-nav {
+    display: none;
+  }
+
   /*gallery view button styles*/
   .gallery-view {
     display: flex;
