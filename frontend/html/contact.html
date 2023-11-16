@@ -58,7 +58,7 @@
     </header>
     <main>
         <div class="contact-container" id="contact">
-            <form id="contact-form" method="post" action="sendmail.php">
+            <form name="contact-form" id="contact-form" method="post" action="contact.js">
                 <h3 class="contact-title">Contact Jack C. Baylor</h3>
                 <div class="name-input">
                     <h4 class="placeholders">Name</h4>
@@ -81,7 +81,7 @@
                     <p class="required-error">(required)</p>
                     <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-                <button id="submit-button" class="submit-button" type="submit">Send</button>
+                <button id="submit-button" class="submit-button" type="submit" formaction="../javascript/contact.js">Send</button>
             </form>
         </div>
     </main>
@@ -96,7 +96,7 @@
 </body>
 <script src="../javascript/action.js"></script>
 <script src="../javascript/contact.js"></script>
-
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1489.0.min.js"></script>
 
 </html>

@@ -5,36 +5,36 @@
 "use strict";
 
 const searchBar = document.getElementById("searchBar");
-let foodList = [];
+let artList = [];
 let searchString = "";
 
-fetch("./foodList.json")
+fetch("./art.json")
   .then((res) => res.json())
   .then((data) => {
-    foodList = data;
+    artList = data;
   });
 
-function findFoodListMatch(searchString) {
-  const matchingFood = foodList.filter((food) =>
-    food.name.toLowerCase().includes(searchString.toLowerCase())
+function findartListMatch(searchString) {
+  const matchingArt = artList.filter((art) =>
+    art.name.toLowerCase().includes(searchString.toLowerCase())
   );
-  return matchingFood;
+  return matchingart;
 }
 
-function displayMatchingItems(matchingFood) {
-  if (matchingFood.length > 0) {
+function displayMatchingItems(matchingArt) {
+  if (matchingArt.length > 0) {
     // Display the matching items
-    matchingFood.forEach((food) => {
-      // console.log(food.name, food.description);
-      document.getElementById("foodName").innerHTML = food.name;
+    matchingArt.forEach((art) => {
+      // console.log(art.name, art.description);
+      document.getElementById("artName").innerHTML = food.name;
       document.getElementById("canEat").innerHTML = food.canEat;
       document.getElementById("description").innerHTML = food.description;
       addStylingToResult();
     });
   } else {
-    console.log("no matching food");
+    console.log("no results");
     document.getElementById("canEat").innerHTML = "";
-    document.getElementById("foodName").innerHTML = "Food not found";
+    document.getElementById("foodName").innerHTML = "Art not found";
   }
 }
 
@@ -42,11 +42,11 @@ function onSearchButtonClick() {
   console.log("clicked");
   const searchString = document.getElementById("searchBar").value;
   console.log(searchString);
-  console.log(foodList);
+  console.log(artList);
 
-  // Find the matching items in the foodList
-  const matchingFood = findFoodListMatch(searchString);
-  displayMatchingItems(matchingFood);
+  // Find the matching items in the artList
+  const matchingArt = findArtListMatch(searchString);
+  displayMatchingItems(matchingArt);
 }
 
 // listening for search bar input and attempting to filter
@@ -55,19 +55,19 @@ searchBar.addEventListener("keyup", (e) => {
   if (e.key === "Enter") {
     const searchString = e.target.value;
     console.log(searchString);
-    console.log(foodList);
+    console.log(artList);
 
-    // Find the matching items in the foodList
-    const matchingFood = findFoodListMatch(searchString);
+    // Find the matching items in the artList
+    const matchingArt = findArtListMatch(searchString);
 
-    displayMatchingItems(matchingFood);
+    displayMatchingItems(matchingArt);
   }
   // Handle the case when no matching items a
 });
 
 // fetching the featured image
 
-fetch("https://api.thedogapi.com/v1/images/search")
+fetch("")
   .then((res) => res.json())
   .then((data) => {
     featuredImage = data[0].url;
