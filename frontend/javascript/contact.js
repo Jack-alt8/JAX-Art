@@ -18,14 +18,12 @@ submitButton.addEventListener("submit", sendEmail);
 
 function sendEmail(){
   Email.send({
-    SecureToken: "process.envSecureToken",
+    SecureToken: process.env.SECURE_TOKEN,
     To: "jackc.baylor@gmail.com",
     From: document.getElementById("email").value,
     Subject: document.getElementById("subject").value,
     Body: document.getElementById("message").value,
-  }).then( 
-    message => alert("Message has been sent!")
-    );
+  }).then( message => alert("Message has been sent!"));
 };
 
 
