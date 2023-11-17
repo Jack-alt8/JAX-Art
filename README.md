@@ -14,16 +14,18 @@ git clone https://github.com/Jack-alt8/JAX-Art.git
 
 2. Install the correct version of npm
 
-cd into backend/server/ folder and run
+    cd into backend/server/ folder and run
 ```sh
 npm install
 ```
-then start the server
+    then start the server
 ```sh
 npm start
 ```
 
 3. Open it up in your browser on localhost:3000
+
+
 
 <h3 align="center"> Features: </h3>
 

@@ -7,33 +7,6 @@
  * ==============================================================
  */
 
-//env config
-const dotenv = require("dotenv");
-require("dotenv").config();
-
-const submitButton = document.getElementById("submit-button");
-const form = document.getElementById("contact-form");
-submitButton.addEventListener("submit", sendEmail);
-
-
-function sendEmail(){
-  Email.send({
-    SecureToken: process.env.SECURE_TOKEN,
-    To: "jackc.baylor@gmail.com",
-    From: document.getElementById("email").value,
-    Subject: document.getElementById("subject").value,
-    Body: document.getElementById("message").value,
-  }).then( message => alert("Message has been sent!"));
-};
-
-
-
-console.log("Oh this was triggered.");
-/*onsubmit = sendEmail() => {};
-           reset(); 
-           return false;
-*/
-
 //contact form check 
 
 const name = document.getElementById('personsname');
