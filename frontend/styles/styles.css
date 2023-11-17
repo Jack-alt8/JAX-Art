@@ -312,6 +312,7 @@ form {
   padding: 2em 4em;
   width: 90%;
   max-width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form h3 {
@@ -331,6 +332,7 @@ form input, form textarea {
   outline: none;
   background: #cccccc;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .submit-button {
@@ -347,11 +349,22 @@ form input, form textarea {
   border-radius: 10px;
 }
 
-.required-error p {
+.required-text {
   color: #9d9d9d;
+  display: block;
+  font-size: 15px;
 }
 
 .required-error {
+  color: red;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  display: none;
+}
+
+.email-error:active {
   color: red;
   font-size: 16px;
   letter-spacing: 1px;
