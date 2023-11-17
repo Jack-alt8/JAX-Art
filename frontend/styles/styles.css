@@ -338,7 +338,7 @@ form input, form textarea {
 .submit-button {
   padding: 15px;
   background: #aa14f0;
-  color: #353535;
+  color: #242424;
   font-size: 18px;
   font-weight: 600;
   border: 0;
@@ -347,6 +347,16 @@ form input, form textarea {
   width: 150px;
   margin: 20px auto 0;
   border-radius: 10px;
+}
+
+.submit-button:hover {
+  background: #0030ff;
+  color: #353535;
+}
+
+.submit-button:active {
+  background: #0030ff;
+  color: #353535;
 }
 
 .required-text, .email-check-text {
