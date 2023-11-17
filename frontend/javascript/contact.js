@@ -19,7 +19,7 @@
 
 const name = document.getElementById('personsname');
 const contactForm = document.getElementById('contact-form');
-const requiredText = document.getElementByClassName("required-text");
+const requiredNameText = document.getElementById("required-name-text");
 const nameError = document.getElementById('name-error');
 
 //checking name input
@@ -30,15 +30,17 @@ personsname.addEventListener('input', function(e) {
 
   if(valid) {
     nameError.style.display = "none";
-    requiredText.style.display = "block";
+    requiredNameText.style.display = "block";
   } else {
     nameError.style.display = "block";
-    requiredText.style.display = "none";
+    requiredNameText.style.display = "none";
   }
 });
 
 const email = document.getElementById("email");
+const requiredEmailText = document.getElementById("required-email-text");
 const emailRequiredError = document.getElementById("emailrequired-error");
+const emailCheckText = document.getElementById("email-check-text");
 const emailError = document.getElementById("email-error");
 
 
@@ -51,15 +53,18 @@ email.addEventListener("input", function (e) {
   if (valid) {
     emailRequiredError.style.display = "none";
     emailError.style.display = "none";
-    requiredText.style.display = "block";
+    requiredEmailText.style.display = "block";
+    emailCheckText.style.display = "block";
   } else {
     emailRequiredError.style.display = "block";
     emailError.style.display = "block";
-    requiredText.style.display = "none";
+    requiredEmailText.style.display = "none";
+    emailCheckText.style.display = "none";
   }
 });
 
 const subject = document.getElementById("subject");
+const requiredSubjectText = document.getElementById("required-subject-text");
 const subjectError = document.getElementById("subject-error");
 
 //checking subject input
@@ -70,14 +75,15 @@ subject.addEventListener("input", function (e) {
 
   if (valid) {
     subjectError.style.display = "none";
-    requiredText.style.display = "block";
+    requiredSubjectText.style.display = "block";
   } else {
     subjectError.style.display = "block";
-    requiredText.style.display = "none";
+    requiredSubjectText.style.display = "none";
   }
 });
 
 const message = document.getElementById("message");
+const requiredMessageText = document.getElementById("required-message-text");
 const messageError = document.getElementById("message-error");
 
 // checking message textarea
@@ -88,9 +94,9 @@ message.addEventListener("input", function (e) {
 
   if (valid) {
     messageError.style.display = "none";
-    requiredText.style.display = "block";
+    requiredMessageText.style.display = "block";
   } else {
     messageError.style.display = "block";
-    requiredText.style.display = "none";
+    requiredMessageText.style.display = "none";
   }
 });
