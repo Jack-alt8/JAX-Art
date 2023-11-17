@@ -31,6 +31,6 @@ npm start
 
 * Analyze data that is stored in arrays, objects, sets or maps and display information about it in your app.
 
-* Use a regular expression to validate user input and either preventthe invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
+* Use a regular expression to validate user input and either prevent invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
 
 * Retrieve data from a third-party API and use it to display something within your app.

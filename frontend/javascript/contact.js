@@ -24,7 +24,7 @@ const nameError = document.getElementById('name-error');
 
 //checking name input
 personsname.addEventListener('input', function(e) {
-  const pattern = /^[\w]{2,15}$/;
+  const pattern = /^[\S\w]{2,15}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue)
 
@@ -46,7 +46,7 @@ const emailError = document.getElementById("email-error");
 
 //checking email input if it was entered
 email.addEventListener("input", function (e) {
-  const pattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  const pattern = /^[\Sa-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
@@ -69,7 +69,7 @@ const subjectError = document.getElementById("subject-error");
 
 //checking subject input
 subject.addEventListener("input", function (e) {
-  const pattern = /^[\w]{2,20}$/;
+  const pattern = /^[\S\w]{2,20}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
@@ -88,7 +88,7 @@ const messageError = document.getElementById("message-error");
 
 // checking message textarea
 message.addEventListener("input", function (e) {
-  const pattern =/^[\w]{20,150}$/;
+  const pattern =/^[\S\w]{20,150}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
