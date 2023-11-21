@@ -2,15 +2,6 @@
 "use strict";
 
 /**
- * (SDK)
- * 1. Follow aws instructions to request an item in my aws bucket
- * 2. Hide my aws credentials using .env (I would need to add this to ignore file)
- * 3. Move my frontend code to my frontend folder and make a backend folder and add my images there
- * 4. Update my github action to only on late changes to the backend/images folder
- * 5. Update my github action to delete all the images before uploading
- */
-
-/**
  * ---------------------------------------------------------------------------------------------------
  * dotenv config
  * ---------------------------------------------------------------------------------------------------
@@ -53,9 +44,3 @@ app.get("/", (req, res) => res.json({ success: "Hello World!" }));
 app.use("/api", api);
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
-
-/**
- * -----------------------------------------------------------------------------------------------------
- * Requesting an item in aws bucket
- * -----------------------------------------------------------------------------------------------------
- */
