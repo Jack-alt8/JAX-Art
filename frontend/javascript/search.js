@@ -1,6 +1,3 @@
-/**
- * Edit code for art list
- */
 //turning on strict mode
 "use strict";
 
@@ -8,7 +5,7 @@ const searchBar = document.getElementById("searchBar");
 let artList = [];
 let searchString = "";
 
-fetch("./art.json")
+fetch("art.json")
   .then((res) => res.json())
   .then((data) => {
     artList = data;
@@ -26,15 +23,15 @@ function displayMatchingItems(matchingArt) {
     // Display the matching items
     matchingArt.forEach((art) => {
       // console.log(art.name, art.description);
-      document.getElementById("artName").innerHTML = food.name;
-      document.getElementById("canEat").innerHTML = food.canEat;
-      document.getElementById("description").innerHTML = food.description;
+      document.getElementById("artName").innerHTML = art.name;
+      document.getElementById("").innerHTML = art.;
+      document.getElementById("description").innerHTML = art.description;
       addStylingToResult();
     });
   } else {
     console.log("no results");
-    document.getElementById("canEat").innerHTML = "";
-    document.getElementById("foodName").innerHTML = "Art not found";
+    document.getElementById("").innerHTML = "";
+    document.getElementById("artName").innerHTML = "Art not found";
   }
 }
 
@@ -79,11 +76,11 @@ fetch("")
 // Add a red or green color class to the "yes" or "no" portion of the result
 
 function addStylingToResult() {
-  if (document.getElementById("canEat").innerHTML === "Yes") {
+  if (document.getElementById("").innerHTML === "Yes") {
     console.log("got it");
-    document.getElementById("canEat").className = "yes";
+    document.getElementById("t").className = "yes";
   } else {
     console.log("dont got it");
-    document.getElementById("canEat").className = "no";
+    document.getElementById("").className = "no";
   }
 }

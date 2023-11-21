@@ -103,6 +103,11 @@
                 <a href="//vsco.co/jack-c-baylor"><img class="vsco" src="../icons/icons8-vsco-50.png" alt="Follow me on VSCO"></a>
             </nav>
             <aside class="container"><img src="../photos/nik-tc-Q592eKGw-unsplash.jpg" alt="Jack's art gear"/><caption>Some of Jack's favorite tools.</caption></aside>
+            <img src="https://robohash.org/${input}?size=200x200" alt="">
+            <form id="robohash-form" class="robohash-form" action="../../backend/server/index.js">
+                <label for="robohash-input">Type anything to change character!</label>
+                <input id="robohash-input" class="robohash-input" type="text">
+            </form>
         </div>
     </main>
 
@@ -115,6 +120,7 @@
     </footer>
 </body>
 <script src="../javascript/action.js"></script>
+<script src="../../backend/server/index.js"></script>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1489.0.min.js"></script>
 
 </html>
