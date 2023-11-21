@@ -7,14 +7,6 @@
  * ==============================================================
  */
 
-/**
- * Check for if all inputs are entered say "required"
- * Always display in grey "required"
- * Check if name is actual name, check for numbers or anything other than letters
- * check if email was entered right, check for name@domain.something (com or www)
- * check if there is something for message
- */
-
 //contact form check 
 
 const name = document.getElementById('personsname');
