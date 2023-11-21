@@ -1,2 +1,6 @@
 # dependencies
 node_modules
+
+# refs
+frontend/javascript/script.js
+frontend/javascript/art.json
