@@ -5,7 +5,7 @@ const searchBar = document.getElementById("searchBar");
 let artList = [];
 let searchString = "";
 
-fetch("art.json")
+fetch("art.js")
   .then((res) => res.json())
   .then((data) => {
     artList = data;

@@ -21,3 +21,4 @@ const myArray = [
     Series: "Untitled Series",
   },
 ];
+console.log(myArray);
