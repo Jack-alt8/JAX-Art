@@ -5,49 +5,25 @@
 /*
 import express from "express";
 import router from "express.Router";
-import fetch from "node-fetch";
+import fetch from "node-fetch"; 
 import bodyParser from "body-parser";
 import cors from "cors";
-import { send } from "process";
-import dotenv from "dotenv";
+import { send } from "process"; 
 const app = express();
 */
 
-const input = document.getElementById("robohash-input");
-const img = document.createElement("img");
+// fetching robot image
+
+const input = 'dd';
+const img = document.getElementById("apiImage");
 const url = `https://robohash.org/${input}?anysize=200x200`;
-const sendGetRequest = fetch(url)
+fetch(url)
   .then((response) => response.blob())
   .then((blob) => {
     img.src = URL.createObjectURL(blob);
-    document.body.appendChild(img);
+    // console.log(api);
+    console.log(apiImage);
   });
-
-// retrieve api and display 
-/*
-const sendGetRequest = fetch(
-  `https://robohash.org/${input}?anysize=200x200`
-);
-*/
-
-// request button or robot generator
-const request = document.getElementById("request-button");
-request.addEventListener("click", sendGetRequest);
-
-
-
-/*
-const fetchApi = async (searchText) => {
-  const url = "=${searchText}&=${process.env.AWS_ACCESS_ID}";
-  try {
-    const apiStream = await fetch(url);
-    const apiJson = await apiStream.json();
-    return appJson;
-  } catch (err) {
-    return { Error: err.stack };
-  }
-};
-*/
 
 router.get("/", (req, res) => {
   res.json({ success: "Hello Api!" });
