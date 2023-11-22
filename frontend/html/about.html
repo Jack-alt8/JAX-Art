@@ -104,10 +104,10 @@
             </nav>
             <aside class="container"><img src="../photos/nik-tc-Q592eKGw-unsplash.jpg" alt="Jack's art gear"/><caption>Some of Jack's favorite tools.</caption></aside>
             <img id="api-image" class="api-image" src="../photos/${input}.png" alt="">
-            <form id="robohash-form" class="robohash-form" action="../../backend/server/index.js">
+            <form id="robohash-form" class="robohash-form" action="submit">
                 <label for="robohash-inpu">Type anything to change character!</label>
                 <input id="robohash-input" class="robohash-input" type="text">
-                <button id="request-button" class="request-button">Generate</button>
+                <button id="request-button" class="request-button" type="button" form="robohash-form" formaction="" formmethod="get">Generate</button>
             </form>
         </div>
     </main>
@@ -121,6 +121,6 @@
     </footer>
 </body>
 <script src="../javascript/action.js"></script>
-<script src="../../backend/server/index.js"></script>
+<script type="module" src="../../backend/server/src/index.js"></script>
 
 </html>

@@ -4,7 +4,7 @@
 // artlist array
 const myArray = [
   {
-    "../../backend/artimages/Abstract_art/RenderedImage(3).jpg",
+    imgsrc: "../../backend/artimages/Abstract_art/RenderedImage(3).jpg",
     title: "Untitled_1",
     size: "100px by 100px",
     arttype: "Digital Art",
