@@ -23,7 +23,7 @@ npm install
 npm start
 ```
 
-3. Open it up in your browser on localhost:3000
+3. Open it up in your browser on localhost:5500/frontend
 
 
 

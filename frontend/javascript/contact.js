@@ -17,7 +17,7 @@ const nameError = document.getElementById('name-error');
 
 //checking name input
 personsname.addEventListener('input', function(e) {
-  const pattern = /^[\w]+[]{2,15}$/;
+  const pattern = /^[\w]{2,15}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue)
 
