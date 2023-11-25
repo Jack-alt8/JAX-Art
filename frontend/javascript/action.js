@@ -14,3 +14,15 @@ toggleButton.addEventListener("click", () =>
  * Home page functionality
  * ===============================================================
  */
+
+/**
+ * ---------------------------------------------------------------
+ * Search bar
+ * ---------------------------------------------------------------
+ */
+const toggleSearch = document.getElementById("toggle-search");
+const search = document.getElementById("search-wrapper");
+
+toggleSearch.addEventListener("click", () =>
+  search.classList.toggle("active")
+);

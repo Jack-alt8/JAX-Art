@@ -151,6 +151,26 @@ Home page styles
 =============================================================================
 */
 
+.search-wrapper > .search-item {
+  display: inline;
+  padding: 0;
+}
+
+.search-wrapper > .search-item > input, button {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px 0 5px;
+}
+
+.search-wrapper {
+  list-style-type: none;
+}
+
+.search-wrapper .search-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: fit-content;
@@ -461,6 +481,10 @@ Search bar
   display: none;
 }
 
+.search-wrapper {
+  /*display: none;*/
+}
+
 .result-image {
   display: none;
 }
@@ -594,6 +618,10 @@ Mobile view styles
   }
 
   /*search button styles*/
+  .search-wrapper {
+    width: 100%;
+  }
+
   .search-button {
     display: flex;
     position: fixed;
@@ -609,6 +637,26 @@ Mobile view styles
     filter: invert(75%);
     width: 32px;
     height: 32px;
+  }
+
+  .search-wrapper {
+    display: flex;
+    border: 3px solid #aa14f0;
+    border-top: 6px solid #aa14f0;
+    padding: 0.5em;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    /*display: none;*/
+  }
+
+  .search-wrapper .search-item {
+    display: block;
+    padding: 10px;
+    border-top: 1px;
   }
 
   .search-button img:active {
