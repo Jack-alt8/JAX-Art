@@ -10,14 +10,14 @@
 //contact form check 
 
 // grabbing all elements and errors for name input
-const name = document.getElementById('personsname');
+const personsname = document.getElementById('personsname');
 const contactForm = document.getElementById('contact-form');
 const requiredNameText = document.getElementById("required-name-text");
 const nameError = document.getElementById('name-error');
 
 //checking name input
 personsname.addEventListener('input', function(e) {
-  const pattern = /^[\w]+[\s]+[\w]{2,15}$/;
+  const pattern = /^[\w\W]{2,15}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue)
 
@@ -68,7 +68,7 @@ const subjectError = document.getElementById("subject-error");
 
 //checking subject input
 subject.addEventListener("input", function (e) {
-  const pattern = /^[\w1-9]{2,20}$/;
+  const pattern = /^[\w\W1-9]{2,20}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 

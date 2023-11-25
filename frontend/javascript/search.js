@@ -1,6 +1,7 @@
 //turning on strict mode
 "use strict";
 
+const searchForm = document.getElementById("searchform");
 const searchBar = document.getElementById("searchbar");
 
 // list of artimages tagged with descriptions
