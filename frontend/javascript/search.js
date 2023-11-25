@@ -56,13 +56,10 @@ function displayArt(matchingArt) {
   if (matchingArt.length > 0) {
     // display the matching items
     matchingArt.forEach((art) => {
-      // show the description of the items
-      // need to be able to input image source into html \/
-      // need to put the right reference into ${} for the array object property "imgsrc"
-      //resultImage.setAttribute("src", "art.imgsrc");
-      resultImage.innerHTML = ` 
-                  <img id=result-art" src="${art.imgsrc}" alt="result art">
-          `;
+      // display the right artimage per search
+      resultImage.setAttribute("src", art.imgsrc);
+
+      // show the description of the art
       artNameText.innerHTML = art.name;
       sizeText.innerHTML = art.size;
       typeOfArtText.innerHTML = art.type;
@@ -72,6 +69,7 @@ function displayArt(matchingArt) {
     });
   } else {
     console.log("no results");
+    document.getElementById("result-image").setAttribute("src", "");
     document.getElementById("artname-text").innerHTML = "Art not found";
     document.getElementById("size-text").innerHTML = "";
     document.getElementById("type-of-art-text").innerHTML = "";
@@ -109,6 +107,7 @@ searchBar.addEventListener("keyup", (e) => {
   } else {
     // when there are no matching results...
     console.log("no results");
+    document.getElementById("result-image").setAttribute("src", "");
     document.getElementById("artname-text").innerHTML = "Art not found";
     document.getElementById("size-text").innerHTML = "";
     document.getElementById("type-of-art-text").innerHTML = "";
