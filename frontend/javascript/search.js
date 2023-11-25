@@ -1,8 +1,9 @@
 //turning on strict mode
 "use strict";
 
-// list of artimages tagged with descriptions
 const searchBar = document.getElementById("searchbar");
+
+// list of artimages tagged with descriptions
 const artList = [
   {
     imgsrc:
@@ -56,6 +57,7 @@ function displayArt(matchingArt) {
   if (matchingArt.length > 0) {
     // display the matching items
     matchingArt.forEach((art) => {
+      
       // display the right artimage per search
       resultImage.setAttribute("src", art.imgsrc);
 
@@ -144,5 +146,32 @@ searchBar.addEventListener("keyup", (e) => {
     document.getElementById("date-text").innerHTML = "";
     document.getElementById("listened-to-text").innerHTML = "";
     document.getElementById("series-text").innerHTML = "";
+  }
+});
+
+// displaying none when reset button is clicked
+searchBar.addEventListener("input", function (e) {
+  const pattern = /^[\w\W]{2,15}$/;
+  const currentValue = e.target.value;
+  const valid = pattern.test(currentValue);
+
+  if (valid) {
+    const searchString = e.target.value.toLowerCase();
+
+    // logging array data on console
+    console.log(searchString);
+    console.log(artList);
+
+  } else {
+    resultImage.style.display = "none";
+    document.getElementById("result-image").setAttribute("src", "");
+    document.getElementById("artname-text").innerHTML = "";
+    document.getElementById("size-text").innerHTML = "";
+    document.getElementById("type-of-art-text").innerHTML = "";
+    document.getElementById("date-text").innerHTML = "";
+    document.getElementById("listened-to-text").innerHTML = "";
+    document.getElementById("series-text").innerHTML = "";
+    e.preventDefault();
+    return false;
   }
 });
