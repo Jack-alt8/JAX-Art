@@ -17,7 +17,7 @@ const nameError = document.getElementById('name-error');
 
 //checking name input
 personsname.addEventListener('input', function(e) {
-  const pattern = /^[\w]{2,15}$/;
+  const pattern = /^[\w]+[\s]+[\w]{2,15}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue)
 
@@ -27,6 +27,8 @@ personsname.addEventListener('input', function(e) {
   } else {
     nameError.style.display = "block";
     requiredNameText.style.display = "none";
+    e.preventDefault();
+    return false;
   }
 });
 
@@ -54,6 +56,8 @@ email.addEventListener("input", function (e) {
     emailError.style.display = "block";
     requiredEmailText.style.display = "none";
     emailCheckText.style.display = "none";
+    e.preventDefault();
+    return false;
   }
 });
 
@@ -64,7 +68,7 @@ const subjectError = document.getElementById("subject-error");
 
 //checking subject input
 subject.addEventListener("input", function (e) {
-  const pattern = /^[\w]{2,20}$/;
+  const pattern = /^[\w1-9]{2,20}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
@@ -74,6 +78,8 @@ subject.addEventListener("input", function (e) {
   } else {
     subjectError.style.display = "block";
     requiredSubjectText.style.display = "none";
+    e.preventDefault();
+    return false;
   }
 });
 
@@ -84,7 +90,7 @@ const messageError = document.getElementById("message-error");
 
 // checking message textarea
 message.addEventListener("input", function (e) {
-  const pattern =/^[\w]{2,150}$/;
+  const pattern =/^[\w\s1-4]{2,150}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
@@ -94,5 +100,7 @@ message.addEventListener("input", function (e) {
   } else {
     messageError.style.display = "block";
     requiredMessageText.style.display = "none";
+    e.preventDefault();
+    return false;
   }
 });

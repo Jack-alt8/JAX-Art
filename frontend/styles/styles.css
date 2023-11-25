@@ -452,7 +452,16 @@ nav > img {
   display: none;
 }
 
+/*
+----------------------------------------------------------
+Search bar
+----------------------------------------------------------
+*/
 .search-button {
+  display: none;
+}
+
+.result-image {
   display: none;
 }
 
