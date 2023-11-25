@@ -6,7 +6,7 @@ const searchBar = document.getElementById("searchbar");
 const artList = [
   {
     imgsrc:
-      "../../backend/artimages/Abstract_art/untitled_series/untitled_10.png",
+      "../backend/artimages/Abstract_art/untitled_series/untitled_10.png",
     name: "Untitled_1",
     size: "100px by 100px",
     type: "Digital Art",
@@ -16,7 +16,7 @@ const artList = [
   },
   {
     imgsrc:
-      "../../backend/artimages/Abstract_art/untitled_series/untitled_11.png",
+      "../backend/artimages/Abstract_art/untitled_series/untitled_11.png",
     name: "Untitled_2",
     size: "100px by 100px",
     type: "Digital Art",
@@ -31,7 +31,6 @@ const artList = [
 function findArtListMatch(searchString) {
   const matchingArt = artList.filter(
     (art) =>
-      art.imgsrc.includes(searchString) ||
       art.name.toLowerCase().includes(searchString.toLowerCase()) ||
       art.size.toLowerCase().includes(searchString.toLowerCase()) ||
       art.type.toLowerCase().includes(searchString.toLowerCase()) ||
@@ -53,18 +52,17 @@ const dateText = document.getElementById("date-text");
 const listenedToText = document.getElementById("listened-to-text");
 const seriesText = document.getElementById("series-text");
 
-function imageGrab() {
-  const resultImage = artList.filter((art) => art.imgsrc);
-  return resultImage;
-}
-
 function displayArt(matchingArt) {
   if (matchingArt.length > 0) {
     // display the matching items
     matchingArt.forEach((art) => {
       // show the description of the items
       // need to be able to input image source into html \/
-      document.getElementById("result-image").innerHTML = `<img src="${art.imgsrc}" />`;
+      // need to put the right reference into ${} for the array object property "imgsrc"
+      //resultImage.setAttribute("src", "art.imgsrc");
+      resultImage.innerHTML = ` 
+                  <img id=result-art" src="${art.imgsrc}" alt="result art">
+          `;
       artNameText.innerHTML = art.name;
       sizeText.innerHTML = art.size;
       typeOfArtText.innerHTML = art.type;

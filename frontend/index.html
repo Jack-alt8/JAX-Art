@@ -73,14 +73,15 @@
                 <!--Search bar-->
                 <div class="search-wrapper">
                     <div class="searchbar-wrapper">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search for a specific work...">
+                        <input type="search" id="searchbar" name="searchbar"
+                            placeholder="Search for a specific work...">
                     </div>
                     <div class="search-button-wrapper">
                         <button id="searchbutton" class="searchbutton" type="button">search</button>
                     </div>
                 </div>
                 <div id="result-art-text" class="result-art-text">
-                    <img id="result-img" src="" alt="result art">
+                    <img id="result-image" class="result-image" src="" alt="result art" width="100px" height="100px">
                     <h3 id="artname-text">art name</h3>
                     <p id="size-text" class="size-text"></p>
                     <p id="type-of-art-text" class="type-of-art-text"></p>
@@ -94,7 +95,7 @@
     <main>
         <!--Image slider for viewing artimages-->
         <div class="slideshow-container">
-        
+
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
@@ -108,7 +109,7 @@
                     <p id="series-text" class="series-text"></p>
                 </div>
             </div>
-        
+
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="../backend/artimages/Abstract_art/" style="width:100%">
@@ -121,7 +122,7 @@
                     <p id="series-text" class="series-text"></p>
                 </div>
             </div>
-        
+
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="../backend/artimages/Abstract_art/" style="width:100%">
@@ -134,18 +135,21 @@
                     <p id="series-text" class="series-text"></p>
                 </div>
             </div>
-        
+
             <!-- Next and previous buttons //fix this! don't use onclick!! -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </main>
 
-    <footer><p class="copyright">© Copyright
-        <script src="javascript/copyright.js"></script> - Jack-alt8</p>
+    <footer>
+        <p class="copyright">© Copyright
+            <script src="javascript/copyright.js"></script> - Jack-alt8
+        </p>
         <nav class="circle">
-            <a href="https://github.com/"><img class="github" src="icons/noun-github-4289652.png"
-                    alt="Follow Jack/alt8 on GitHub"></a>
+            <a href="https://github.com/">
+                <img class="github" src="icons/noun-github-4289652.png" alt="Follow Jack/alt8 on GitHub">
+            </a>
         </nav>
     </footer>
 </body>
