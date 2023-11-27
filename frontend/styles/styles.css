@@ -184,6 +184,7 @@ Home page styles
 
 .searchbar {
   background-color: #7e0fb1;
+  border: 10px;
 }
 
 .searchbar input {
@@ -332,19 +333,68 @@ About page styles
   padding: 1em 1em 0;
 }
 
-.about-statement {
+h3.about-statement {
+  color: #979797;
   font-size: 1.5em;
   margin-top: 1em;
+  text-align: start;
 }
 
-.about-bio {
+.about-p {
+  padding: 1em;
+  width: 95%;
+}
+
+.about-p p{
+  color: white;
+  text-indent: 3.1em;
+  text-align: left;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+  word-spacing: 0.02em;
+  width: 100%;
+}
+
+article > p {
+  padding: 0.1em;
+}
+
+p.opening-p#opening-p {
+  text-indent: 1em;
+}
+
+h4.about-bio {
+  color: #979797;
   font-size: 1.3em;
   margin-top: 1em;
 }
 
+h5 {
+  color: #979797;
+  font-size: 1.1em;
+  margin: 1em 0 0 1em;
+}
+
+nav.about-socials {
+  margin: 0.2em 0 0 0.9em;
+  position: static;
+}
+
+.about-socials img{
+  height: 3.1em;
+}
+
+.about-socials img:hover {
+  filter: invert(100%);
+}
+
+.about-socials img:active {
+  filter: invert(100%);
+}
+
 aside,
 article {
-  padding: 1em;
+  padding: 0.1em;
 }
 
 img > aside {
@@ -533,7 +583,6 @@ Mobile view styles
   header {
     padding: 5px 0 0;
     border: 3px solid #aa14f0;
-    border-top: 5px solid #aa14f0;
   }
 
   .corner {
@@ -773,6 +822,16 @@ Computer view styles
     margin: 0 5px;
   }
 
+  main {
+    width: 70%;
+    min-height: 85%;
+    padding: 0 0 5em;
+    margin-top: 0.1em;
+    margin-left: 30%;
+    top: 0;
+    right: 0;
+  }
+
   /*
   ==================================================================
   Home page styles (computer specific)
@@ -807,28 +866,24 @@ Computer view styles
     border-radius: 10%;
   }
 
-  main {
-    width: 70%;
-    min-height: 85%;
-    padding: 8em 0 5em;
-    margin-top: 0.1em;
-    margin-left: 30%;
-    top: 0;
-    right: 0;
-  }
-
   /*
   ==========================================================
   About page styles (computer view specific)
   ==========================================================
   */
-  aside {
+  .about-content .about-statement {
+    padding-top: 0;
+  }
+
+  aside.container {
     margin-right: 2%;
   }
 
-  aside img {
-    width: 160px;
-    height: 120px;
+  aside.container img {
+    max-width: 80%;
+    max-height: 60%;
+    width: "device-width";
+    height: "425px";
   }
 
   /*nav styles*/

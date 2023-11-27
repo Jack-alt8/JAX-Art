@@ -3,6 +3,7 @@
 
 const searchForm = document.getElementById("searchform");
 const searchBar = document.getElementById("searchbar");
+const result = document.getElementById("result");
 
 // list of artimages tagged with descriptions
 const artList = [
