@@ -6,13 +6,28 @@
  * Image slider
  * ---------------------------------------------------------------
  */
+
+// previous and next buttons
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+
+
+
+// Next/previous controls
+prevButton.addEventListener("click", () =>
+    plusSlides(-1)
+);
+
+nextButton.addEventListener("click", () =>
+  plusSlides(1)
+);
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+      showSlides((slideIndex += n));
+    }
 
 // Thumbnail image controls
 function currentSlide(n) {
