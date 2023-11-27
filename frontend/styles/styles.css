@@ -414,9 +414,9 @@ Contact page styles
 */
 
 .contact-container {
-  padding: 1em;
+  padding: 0.1em;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
 }
 
@@ -435,18 +435,54 @@ form h3 {
   margin-bottom: 20px;
 }
 
-form, .placeholders h4 {
-  color: #585858;
+div.email-input, div.subject-input, div.message-input {
+  padding-top: 1.5em;
+}
+
+div.input-info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+div.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+label.placeholders {
+  color: #797979;
+  font-weight: bold;
+  padding-right: 0.5em;
 }
 
 form input, form textarea {
-  border: 0;
+  border: 0.3em solid #393939;
+  border-radius: 0.94em;
   margin: 10px 0;
   padding: 0.5em;
   outline: none;
   background: #cccccc;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+form textarea {
+  height: 10em;
+  width: 20em;
+}
+
+form input:focus:required, form textarea:focus:required {
+  border: 0.3em solid #7e0fb1;
+  border-radius: 0.94em;
+  background: #cccccc;
+}
+
+form div img {
+  filter: invert(100%);
+  padding: 0.5em 0 0 0.5em;
+  display: none;
 }
 
 .submit-button {
@@ -473,7 +509,7 @@ form input, form textarea {
   color: #353535;
 }
 
-.required-text, .email-check-text {
+.required-text, .email-check-text, .message-length-error {
   color: #9d9d9d;
   display: block;
   font-size: 15px;
@@ -482,9 +518,8 @@ form input, form textarea {
 .required-error, .email-error {
   color: red;
   font-size: 16px;
-  letter-spacing: 1px;
-  margin-top: 0px;
-  margin-bottom: 24px;
+  letter-spacing: 0.063em;
+  margin-bottom: 0.1em;
   display: none;
 }
 

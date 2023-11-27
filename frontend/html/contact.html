@@ -57,35 +57,56 @@
     </header>
     <main>
         <div class="contact-container" id="contact">
-            <form name="contact-form" id="contact-form" method="post">
+            <form name="contact-form" id="contact-form" autocomplete="on" method="post">
                 <h3 class="contact-title">Contact Jack C. Baylor</h3>
                 <div class="name-input">
-                    <label class="placeholders">Name</label>
-                    <p id="required-name-text" class="required-text">(required)</p>
-                    <p id="name-error" class="required-error">(required)</p>
-                    <input id="personsname" type="text" name="name" required>
+                    <div id="name-input-info" class="input-info">
+                        <label class="placeholders">Name</label>
+                        <p id="required-name-text" class="required-text">(required)</p>
+                        <p id="name-error" class="required-error">(required)</p>
+                    </div>
+                    <div id="name-input-wrapper" class="input-wrapper">
+                        <input id="personsname" type="text" name="name input" autocomplete="given-name" required>
+                        <img id="name-error-icon" class="name-error-icon" src="../icons/error_FILL0_wght400_GRAD0_opsz24.png" alt="error-icon">
+                    </div>
                 </div>
                 <div class="email-input">
-                    <label class="placeholders">Email</label>
-                    <p id="required-email-text" class="required-text">(required)</p>
-                    <p id="emailrequired-error" class="required-error">(required)</p>
+                    <div id="email-input-info" class="input-info">
+                        <label class="placeholders">Email</label>
+                        <p id="required-email-text" class="required-text">(required)</p>
+                        <p id="emailrequired-error" class="required-error">(required)</p>
+                    </div>
                     <p id="email-check-text" class="email-check-text">please make sure your email address is entered correctly</p>
                     <p id="email-error" class="email-error">please make sure your email address is entered correctly</p>
-                    <input id="email" type="email" name="email" required>
+                    <div id="email-input-wrapper" class="input-wrapper">
+                        <input id="email" type="email" name="email input" autocomplete="email" required>
+                        <img id="email-error-icon" class="email-error-icon" src="../icons/error_FILL0_wght400_GRAD0_opsz24.png" alt="error-icon">
+                    </div>
                 </div>
                 <div class="subject-input">
-                    <label class="placeholders">Subject</label>
-                    <p id="required-subject-text" class="required-text">(required)</p>
-                    <p id="subject-error" class="required-error">(required)</p>
-                    <input id="subject" type="text" name="subject" required>
+                    <div id="subject-input-info" class="input-info">
+                        <label class="placeholders">Subject</label>
+                        <p id="required-subject-text" class="required-text">(required)</p>
+                        <p id="subject-error" class="required-error">(required)</p>
+                    </div>
+                    <div id="subject-input-wrapper" class="input-wrapper">
+                        <input id="subject" type="text" name="subject input" autocomplete="off" required>
+                        <img id="subject-error-icon" class="subject-error-icon" src="../icons/error_FILL0_wght400_GRAD0_opsz24.png" alt="error-icon">
+                    </div>
                 </div>
                 <div class="message-input">
-                    <label class="placeholders">Message</label>
-                    <p id="required-message-text" class="required-text">(required)</p>
-                    <p id="message-error" class="required-error">(required)</p>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    <div id="message-input-info" class="input-info">
+                        <label class="placeholders">Message</label>
+                        <p id="required-message-text" class="required-text">(required)</p>
+                        <p id="message-error" class="required-error">(required)</p>
+                    </div>
+                    <p id="message-length-error" class="message-length-error">please write at least a sentence for your reason of contacting Jack</p>
+                    <div id="message-input-wrapper" class="input-wrapper">
+                        <textarea id="message" name="message" autocomplete="off" required></textarea>
+                        <img id="message-error-icon" class="message-error-icon" src="../icons/error_FILL0_wght400_GRAD0_opsz24.png" alt="error-icon">
+                    </div>
                 </div>
-                <button id="submit-button" class="submit-button" type="submit" formaction="mailto:jackc.baylor@gmail.com">Send</button>
+                <button id="submit-button" class="submit-button" type="submit" form="contact-form" formaction="mailto:jackc.baylor@gmail.com">Send</button>
             </form>
         </div>
     </main>
