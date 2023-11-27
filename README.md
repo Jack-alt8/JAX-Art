@@ -12,19 +12,7 @@ The website is simple to navigate and includes links to my social media profiles
 git clone https://github.com/Jack-alt8/JAX-Art.git
 ```
 
-2. Install the correct version of npm
-
-    cd into backend/server/ folder and run
-```sh
-npm install
-```
-    then start the server
-```sh
-npm start
-```
-
-3. Open it up in your browser on localhost:5500/frontend
-
+2. Open it up through index.html on your browser
 
 
 <h3 align="center"> Features: </h3>

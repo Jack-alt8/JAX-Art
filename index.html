@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.ico">
+    <title>Jack C. Baylor - JAX Art</title>
+</head>
+
+<body>
+    <header>
+        <div class="corner">
+            <div class="corner-content">
+                <div class="logo">
+                    <a class="icon" href="index.html">
+                        <img class="primary-icon" src="icons/coffee-cup.gif" alt="moving coffee cup logo" />
+                    </a>
+                </div>
+                <div class="title-content">
+                    <h1 class="main-title">Jack C. Baylor</h1>
+                    <div class="sub-nav">
+                        <h2 class="sub-title">JAX Art</h2>
+                        <nav class="contact-content">
+                            <a href="//www.instagram.com/jackc.baylor"><img class="instagram"
+                                    src="icons/noun-camera-5972018.png" alt="Follow me on Instagram"></a>
+                            <a href="//www.youtube.com/@jackbaylor1926"><img class="youtube"
+                                    src="icons/noun-video-player-10681.png" alt="Follow me on YouTube"></a>
+                            <a href="//vsco.co/jack-c-baylor"><img class="vsco" src="icons/icons8-vsco-50.png"
+                                    alt="Follow me on VSCO"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="navbar">
+                <div class="mobile-buttons-nav">
+                    <button type="button" class="menu" id="toggle-button" aria-label="hamburger-menu">
+                        <img src="icons/menu_FILL0_wght400_GRAD0_opsz24.png" alt="hamburger-menu">
+                    </button>
+                    <button type="button" class="gallery-view" id="toggle-gallery-view" aria-label="gallery-view">
+                        <a class="gallery-icon" href="html/gallery.html">
+                            <img src="icons/gallery_thumbnail_FILL0_wght400_GRAD0_opsz24.png" alt="gallery-view">
+                        </a>
+                    </button>
+                    <button type="button" class="search-button" id="toggle-search" aria-label="search-button">
+                        <img src="icons/search_FILL0_wght400_GRAD0_opsz24.png" alt="search-button">
+                    </button>
+                </div>
+                <nav>
+                    <ul class="nav-list" id="nav-list">
+                        <li class="list-item">
+                            <a href="index.html">home</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="html/about.html">about</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="html/contact.html">contact</a>
+                        </li>
+                    </ul>
+                    <ul class="home-nav" id="home-nav">
+                        <li class="list-item">
+                            <a href="html/gallery.html">gallery</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="">search</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--Search bar-->
+                <div class="search-wrapper">
+                    <div class="search-item">
+                        <button id="searchbutton" class="searchbutton" type="button"><img src="icons/search_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="search-button"></button>
+                    </div>
+                    <div id="searchform" class="search-item">
+                        <input type="search" id="searchbar" class="searchbar" name="searchbar"
+                            placeholder="Search for a specific work...">
+                    </div>
+                </div>
+                <div id="result" class="result">
+                    <img id="result-image" class="result-image" src="" alt="result art" width="100px" height="100px">
+                    <h3 id="artname-text"></h3>
+                    <p id="size-text" class="size-text"></p>
+                    <p id="type-of-art-text" class="type-of-art-text"></p>
+                    <p id="date-text" class="date-created-text"></p>
+                    <p id="listened-to-text" class="listened-to-text"></p>
+                    <p id="series-text" class="series-text"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Image slider for viewing artimages-->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="artimages/Abstract_art/2020_to_2022/comfort_for_the_future.PN" style="width:100%">
+                <div class="text" id="text">
+                    <h4 id="art-name-text"></h4>
+                    <p id="size-text" class="size-text"></p>
+                    <p id="type-of-art-text" class="type-of-art-text"></p>
+                    <p id="date-created-text" class="date-created-text"></p>
+                    <p id="listened-to-text" class="listened-to-text"></p>
+                    <p id="series-text" class="series-text"></p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="artimages/Abstract_art/" style="width:100%">
+                <div class="text" id="result-art-text">
+                    <h4 id="art-name-text"></h4>
+                    <p id="size-text" class="size-text"></p>
+                    <p id="type-of-art-text" class="type-of-art-text"></p>
+                    <p id="date-created-text" class="date-created-text"></p>
+                    <p id="listened-to-text" class="listened-to-text"></p>
+                    <p id="series-text" class="series-text"></p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="artimages/Abstract_art/" style="width:100%">
+                <div class="text" id="result-art-text">
+                    <h4 id="art-name-text"></h4>
+                    <p id="size-text" class="size-text"></p>
+                    <p id="type-of-art-text" class="type-of-art-text"></p>
+                    <p id="date-created-text" class="date-created-text"></p>
+                    <p id="listened-to-text" class="listened-to-text"></p>
+                    <p id="series-text" class="series-text"></p>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons //fix this! don't use onclick!! -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copyright">© Copyright
+            <script src="javascript/copyright.js"></script> - Jack-alt8
+        </p>
+        <nav class="circle">
+            <a href="https://github.com/">
+                <img class="github" src="icons/noun-github-4289652.png" alt="Follow Jack/alt8 on GitHub">
+            </a>
+        </nav>
+    </footer>
+</body>
+<script src="javascript/action.js"></script>
+<script src="javascript/search.js"></script>
+<script src="javascript/imageslider.js"></script>
+
+</html>
