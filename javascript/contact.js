@@ -113,7 +113,7 @@ const messageErrorIcon = document.getElementById("message-error-icon");
 
 // checking message textarea
 message.addEventListener("input", function (e) {
-  const pattern =/^[\s1-4]{15,150}$/;
+  const pattern =/^[\w\W1-4]{15,150}$/;
   const currentValue = e.target.value;
   const valid = pattern.test(currentValue);
 
@@ -121,6 +121,10 @@ message.addEventListener("input", function (e) {
     messageError.style.display = "none";
     requiredMessageText.style.display = "block";
     messageErrorIcon.style.display = "none";
+    messageLengthError.style.color = "";
+    messageLengthError.style.fontSize = "";
+    messageLengthError.style.letterSpacing = "";
+    messageLengthError.style.marginBottom = "";
     message.style.border = "0.3em solid blue";
     message.style.background = "lightblue";
   } else {
