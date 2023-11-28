@@ -22,3 +22,21 @@ git clone https://github.com/Jack-alt8/JAX-Art.git
 * Use a regular expression to validate user input and either prevent invalid input or inform the user about it (in all cases prevent invalid input from being stored or saved).
 
 * Retrieve data from a third-party API and use it to display something within your app.
+
+<h4 align="center"> Extra: </h4>
+
+This project includes art from unsplash, special thanks to: Alice Donovan Rouse, the Birmingham Museum Trust, Geordanna, Jason Leung, Joel Filipe, Maria Orlova, and Meric Dagli.
+
+* Alice Donovan Rouse - Hico Jill
+
+* Birmingham Museum Trust - Grain fields, Mountain path, Mountain river, Mountain waterfall, Sheep-herder, and Faded trees
+
+* Geordanna - Spirit
+
+* Jason Leung - Love the Corner
+
+* Joel Filipe- Sun Splash
+
+* Maria Orlova - Purple Foam
+
+* Meric Dagli - True Feeling

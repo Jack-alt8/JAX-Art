@@ -140,7 +140,7 @@ nav > ul > li {
 main {
   display: flex;
   margin-top: auto;
-  padding-top: 3em;
+  padding-top: 5em;
   padding-bottom: 3em;
   min-height: 85%;
 }
@@ -151,10 +151,18 @@ Home page styles
 =============================================================================
 */
 div#home-content.home-content {
+    max-width: auto;
     display: flex;
     flex-direction: column;
   }
 
+.search {
+  width: auto;
+  background: #df9ffd;
+  border: 0.2em solid #aa14f0;
+}
+
+/*searchbar styles*/
 #search-wrapper {
   display: flex;
   background: #7e0fb1;
@@ -207,11 +215,37 @@ div#home-content.home-content {
   filter: invert(90%);
 }
 
+
+
+/* Caption text */
+#artname-text, 
+#size-text, 
+#type-of-art-text, 
+#date-text, 
+#listened-to-text, 
+#series-text {
+  color: #585858;
+  font-size: 0.9em;
+  padding: 0.1em 0.5em;
+  bottom: 0.1em;
+  width: 100%;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: fit-content;
   margin: auto;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 1em;
+}
+
+.mySlides{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 /* Hide the images by default */
@@ -228,9 +262,11 @@ div#home-content.home-content {
   margin-top: -22px;
   padding: 16px;
   color: rgb(68, 68, 68);
+  background-color: #000000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 2em;
   transition: 0.6s ease;
+  border: 0px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -248,18 +284,22 @@ div#home-content.home-content {
 }
 
 /* Caption text */
-.text {
-  color: #353535;
-  font-size: 15px;
-  padding: 8px 12px;
-  bottom: 8px;
+#art-name-text, 
+#size-text, 
+#type-of-art-text, 
+#date-created-text, 
+#listened-to-text, 
+#series-text {
+  color: #585858;
+  font-size: 0.9em;
+  padding: 0.1em 0.5em;
+  bottom: 0.1em;
   width: 100%;
-  text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Number text (1/12 etc) */
 .numbertext {
-  color: #000000;
+  color: #979797;
   font-size: 12px;
   padding: 8px 12px;
   top: 0;
@@ -704,7 +744,8 @@ Mobile view styles
   }
 
   main {
-    padding: 0 0 2.2em 0;
+    padding: auto;
+    overflow: hidden;
   }
 
   /*
