@@ -317,11 +317,20 @@ Gallery page styles
 ==============================================================
 */
 .all-images {
+  margin-top: 3em;
   padding: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#image-wrapper.image-wrapper {
+  margin: 1em;
+  align-items: center;
 }
 
 .art-images {
-  height: 100px;
+  height: 10em;
 }
 
 /*
@@ -996,6 +1005,15 @@ Computer view styles
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
+  }
+
+  /*
+  ==========================================================
+  Gallery page styles (computer view specific)
+  ==========================================================
+  */
+  .all-images {
+    margin-top: 0;
   }
 
   /*
