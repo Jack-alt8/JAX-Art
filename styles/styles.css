@@ -330,7 +330,7 @@ About page styles
 ==============================================================
 */
 .about-content {
-  padding: 1em 1em 0;
+  padding: 1em 1em 4em;
 }
 
 h3.about-statement {
@@ -423,7 +423,7 @@ Contact page styles
 form {
   display: flex;
   flex-direction: column;
-  padding: 2em 4em;
+  padding: 2em 4em 4em;
   width: 90%;
   max-width: 600px;
   font-family: Arial, Helvetica, sans-serif;
@@ -694,6 +694,10 @@ Mobile view styles
     filter: invert(100%);
   }
 
+  main {
+    padding: 0 0 2.2em 0;
+  }
+
   /*
   ===========================================================
   Home page styles (mobile view specific)
@@ -742,7 +746,7 @@ Mobile view styles
   /*search styles*/
 
   div#search.search {
-    margin-top: 1.4em;
+    margin-top: 4em;
   }
 
   #search-wrapper {
@@ -896,8 +900,8 @@ Computer view styles
   main {
     width: 70%;
     min-height: 85%;
-    padding: 0 0 5em;
     margin-left: 30%;
+    padding: 0 0 2.2em 0;
     top: 0;
     right: 0;
   }
@@ -999,6 +1003,7 @@ Computer view styles
   About page styles (computer view specific)
   ==========================================================
   */
+
   .about-content .about-statement {
     padding-top: 0;
   }

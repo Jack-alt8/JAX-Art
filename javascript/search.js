@@ -1,6 +1,27 @@
 //turning on strict mode
 "use strict";
 
+/**
+ * ===============================================================
+ * Home page functionality
+ * ===============================================================
+ */
+
+//search button functionality (mobile)
+const toggleSearch = document.getElementById("toggle-search");
+const search = document.getElementById("search");
+
+toggleSearch.addEventListener("click", () =>
+  search.classList.toggle("active")
+);
+
+//search button functionality (computer)
+const computertoggleSearch = document.getElementById("computer-toggle-search");
+
+computertoggleSearch.addEventListener("click", () =>
+  search.classList.toggle("active")
+);
+
 const searchForm = document.getElementById("searchform");
 const searchBar = document.getElementById("searchbar");
 const result = document.getElementById("result");
