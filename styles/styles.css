@@ -150,24 +150,28 @@ main {
 Home page styles
 =============================================================================
 */
+div#home-content.home-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-.search-wrapper {
+#search-wrapper {
   display: flex;
   background: #7e0fb1;
   justify-content: baseline;
   align-items: flex-start;
 }
 
-.search-wrapper > .search-item > input, button {
+#search-wrapper > .search-item > input, button {
   list-style: none;
   margin: 0 5px 0 5px;
 }
 
-.search-wrapper {
+#search-wrapper {
   list-style-type: none;
 }
 
-.search-wrapper .search-item {
+#search-wrapper .search-item {
   padding: 0.2em;
 }
 
@@ -206,7 +210,6 @@ Home page styles
 /* Slideshow container */
 .slideshow-container {
   max-width: fit-content;
-  position: relative;
   margin: auto;
   overflow-x: hidden;
 }
@@ -220,7 +223,6 @@ Home page styles
 .prev,
 .next {
   cursor: pointer;
-  position: relative;
   top: 50%;
   width: auto;
   margin-top: -22px;
@@ -250,7 +252,6 @@ Home page styles
   color: #353535;
   font-size: 15px;
   padding: 8px 12px;
-  position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -261,7 +262,6 @@ Home page styles
   color: #000000;
   font-size: 12px;
   padding: 8px 12px;
-  position: relative;
   top: 0;
 }
 
@@ -597,6 +597,10 @@ Search bar
   display: none;
 }
 
+.search {
+  display: none;
+}
+
 .result-image {
   display: none;
 }
@@ -604,6 +608,11 @@ Search bar
 .menu {
   display: none;
 }
+
+/*Universal active class functionality (don't touch!)*/
+  .active {
+    display: block; 
+  }
 
 /*
 ----------------------------------------------------------------------
@@ -731,8 +740,13 @@ Mobile view styles
   }
 
   /*search styles*/
-  .search-wrapper {
-    width: 100%;
+
+  div#search.search {
+    margin-top: 1.4em;
+  }
+
+  #search-wrapper {
+    width: 100;
   }
 
   .search-button {
@@ -752,21 +766,44 @@ Mobile view styles
     height: 32px;
   }
 
-  .search-wrapper {
+  #search {
+    width: 100%;
+  }
+
+  #search-wrapper {
+    padding: 0.5em;
+    border: 0.3em solid #aa14f0;
+  }
+
+  #searchform.search-item {
+    width: 90%;
+    padding: 0.3em;
+  }
+
+  input#searchbar.searchbar {
+    width: 100%;
+    padding: 0 0.4em;
+    margin-left: 0;
+  }
+
+  .searchbutton {
+    padding: 0;
+    margin-right: 0.05;
+  }
+
+  #search-wrapper {
     display: flex;
     border: 3px solid #aa14f0;
     border-top: 6px solid #aa14f0;
     padding: 0.1em;
   }
 
-  .search-wrapper {
+  #search-wrapper {
     text-align: center;
     padding-top: 10px;
-    /*display: none;*/
   }
 
-  .search-wrapper .search-item {
-    /* display: block; */
+  #search-wrapper .search-item {
     border-top: 1px;
   }
 
@@ -834,7 +871,6 @@ Computer view styles
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
-    padding-top: 10px;
     width: 100%;
   }
 
@@ -861,7 +897,6 @@ Computer view styles
     width: 70%;
     min-height: 85%;
     padding: 0 0 5em;
-    margin-top: 0.1em;
     margin-left: 30%;
     top: 0;
     right: 0;
@@ -895,6 +930,64 @@ Computer view styles
   }
 
   .home-nav .list-item a:active {
+    color: #dddddd;
+    padding: 0 18px 1px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
+  /*search styles*/
+  #search {
+    width: 100%;
+  }
+
+  #search-wrapper {
+    padding: 0.5em;
+    border: 0.3em solid #aa14f0;
+  }
+
+  #searchform.search-item {
+    width: 90%;
+    padding: 0.3em;
+  }
+
+  input#searchbar.searchbar {
+    width: 100%;
+    padding: 0 0.4em;
+    margin-left: 0;
+  }
+
+  .search-button img {
+    height: 4em;
+    width: 4em;
+  }
+
+  .searchbutton {
+    padding: 0;
+    margin-right: 0.05;
+  }
+
+  button.search-word-button {
+    padding-right: 1.2em;
+    border: 10px;
+    width: 100%;
+    color: #585858;
+    background: #000000;
+  }
+
+  button.search-word-button p {
+    font-size: 1.50em;
+    color: #585858;
+  }
+
+  button.search-word-button p:hover {
+    color: #dddddd;
+    padding: 0 18px 1px;
+    border-bottom: 0.5rem solid #0030ff;
+    border-radius: 10%;
+  }
+
+  button.search-word-button p:active {
     color: #dddddd;
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;

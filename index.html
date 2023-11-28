@@ -49,6 +49,7 @@
                         <img src="icons/search_FILL0_wght400_GRAD0_opsz24.png" alt="search-button">
                     </button>
                 </div>
+                <!--navigation menu-->
                 <nav>
                     <ul class="nav-list" id="nav-list">
                         <li class="list-item">
@@ -66,22 +67,27 @@
                             <a href="html/gallery.html">gallery</a>
                         </li>
                         <li class="list-item">
-                            <a href="">search</a>
+                            <button type="button" class="search-word-button" id="computer-toggle-search" aria-label="search-button"><p>search</p></button>
                         </li>
                     </ul>
                 </nav>
-                <!--Search bar-->
-                <div class="search-wrapper">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="home-content" class="home-content">
+            <div id="search" class="search">
+                <div id="search-wrapper" class="search-item">
                     <div class="search-item">
-                        <button id="searchbutton" class="searchbutton" type="button"><img src="icons/search_FILL0_wght400_GRAD0_opsz24.png"
-                                alt="search-button"></button>
+                        <button id="searchbutton" class="searchbutton" type="button"><img
+                                src="icons/search_FILL0_wght400_GRAD0_opsz24.png" alt="search-button"></button>
                     </div>
                     <div id="searchform" class="search-item">
                         <input type="search" id="searchbar" class="searchbar" name="searchbar"
                             placeholder="Search for a specific work...">
                     </div>
                 </div>
-                <div id="result" class="result">
+                <div id="result" class="search-item">
                     <img id="result-image" class="result-image" src="" alt="result art" width="100px" height="100px">
                     <h3 id="artname-text"></h3>
                     <p id="size-text" class="size-text"></p>
@@ -91,53 +97,51 @@
                     <p id="series-text" class="series-text"></p>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <!--Image slider for viewing artimages-->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="artimages/Abstract_art/2020_to_2022/comfort_for_the_future.PNG" style="width:25%">
-                <div class="text" id="text">
-                    <h4 id="art-name-text"></h4>
-                    <p id="size-text" class="size-text"></p>
-                    <p id="type-of-art-text" class="type-of-art-text"></p>
-                    <p id="date-created-text" class="date-created-text"></p>
-                    <p id="listened-to-text" class="listened-to-text"></p>
-                    <p id="series-text" class="series-text"></p>
+            <!--Image slider for viewing artimages-->
+            <div class="slideshow-container">
+    
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="artimages/Abstract_art/2020_to_2022/comfort_for_the_future.PNG" style="width:25%">
+                    <div class="text" id="text">
+                        <h4 id="art-name-text"></h4>
+                        <p id="size-text" class="size-text"></p>
+                        <p id="type-of-art-text" class="type-of-art-text"></p>
+                        <p id="date-created-text" class="date-created-text"></p>
+                        <p id="listened-to-text" class="listened-to-text"></p>
+                        <p id="series-text" class="series-text"></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="artimages/Abstract_art/" style="width:100%">
-                <div class="text" id="result-art-text">
-                    <h4 id="art-name-text"></h4>
-                    <p id="size-text" class="size-text"></p>
-                    <p id="type-of-art-text" class="type-of-art-text"></p>
-                    <p id="date-created-text" class="date-created-text"></p>
-                    <p id="listened-to-text" class="listened-to-text"></p>
-                    <p id="series-text" class="series-text"></p>
+    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="artimages/Abstract_art/" style="width:100%">
+                    <div class="text" id="result-art-text">
+                        <h4 id="art-name-text"></h4>
+                        <p id="size-text" class="size-text"></p>
+                        <p id="type-of-art-text" class="type-of-art-text"></p>
+                        <p id="date-created-text" class="date-created-text"></p>
+                        <p id="listened-to-text" class="listened-to-text"></p>
+                        <p id="series-text" class="series-text"></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="artimages/Abstract_art/" style="width:100%">
-                <div class="text" id="result-art-text">
-                    <h4 id="art-name-text"></h4>
-                    <p id="size-text" class="size-text"></p>
-                    <p id="type-of-art-text" class="type-of-art-text"></p>
-                    <p id="date-created-text" class="date-created-text"></p>
-                    <p id="listened-to-text" class="listened-to-text"></p>
-                    <p id="series-text" class="series-text"></p>
+    
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="artimages/Abstract_art/" style="width:100%">
+                    <div class="text" id="result-art-text">
+                        <h4 id="art-name-text"></h4>
+                        <p id="size-text" class="size-text"></p>
+                        <p id="type-of-art-text" class="type-of-art-text"></p>
+                        <p id="date-created-text" class="date-created-text"></p>
+                        <p id="listened-to-text" class="listened-to-text"></p>
+                        <p id="series-text" class="series-text"></p>
+                    </div>
                 </div>
+                <button id="prev" class="prev">&#10094;</button>
+                <button id="next" class="next">&#10095;</button>
             </div>
-            <button id="prev" class="prev">&#10094;</button>
-            <button id="next" class="next">&#10095;</button>
         </div>
     </main>
 

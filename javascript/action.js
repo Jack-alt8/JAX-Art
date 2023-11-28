@@ -15,14 +15,17 @@ toggleButton.addEventListener("click", () =>
  * ===============================================================
  */
 
-/**
- * ---------------------------------------------------------------
- * Search bar
- * ---------------------------------------------------------------
- */
+//search button functionality (mobile)
 const toggleSearch = document.getElementById("toggle-search");
-const search = document.getElementById("search-wrapper");
+const search = document.getElementById("search");
 
 toggleSearch.addEventListener("click", () =>
+  search.classList.toggle("active")
+);
+
+//search button functionality (mobile)
+const computertoggleSearch = document.getElementById("computer-toggle-search");
+
+computertoggleSearch.addEventListener("click", () =>
   search.classList.toggle("active")
 );

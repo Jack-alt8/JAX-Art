@@ -7,7 +7,6 @@ const result = document.getElementById("result");
 
 // list of artimages tagged with descriptions
 const artList = [
-  ,
   {
     imgsrc:
       "../artimages/Abstract_art/an_artist_is_not_paid_for_his_labor_but_for_his_vision/an_artist_is_not_paid_for_his_labor_but_for_his_vision.jpg",
