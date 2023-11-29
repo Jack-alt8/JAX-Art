@@ -152,16 +152,22 @@ Home page styles
 =============================================================================
 */
 div#home-content.home-content {
-    max-width: auto;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
   }
 
 .search {
-  width: auto;
+  width: 100%;
   background: #df9ffd;
   border: 0.2em solid #aa14f0;
 }
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
 /*searchbar styles*/
 #search-wrapper {
@@ -169,6 +175,7 @@ div#home-content.home-content {
   background: #7e0fb1;
   justify-content: baseline;
   align-items: flex-start;
+  width: 100%;
 }
 
 #search-wrapper > .search-item > input, button {
@@ -198,10 +205,12 @@ div#home-content.home-content {
 .searchbar {
   background-color: #7e0fb1;
   border: 10px;
+  width: 100%;
 }
 
 .searchbar input {
   border: 10px;
+  width: 100%;
 }
 
 .search-item .searchbar input {
@@ -649,11 +658,6 @@ nav > img {
   display: none;
 }
 
-/*
-----------------------------------------------------------
-Search bar
-----------------------------------------------------------
-*/
 .search-button {
   display: none;
 }
@@ -781,6 +785,7 @@ Mobile view styles
   .home-content {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .slideshow-container {
@@ -854,7 +859,7 @@ Mobile view styles
   }
 
   #search-wrapper {
-    width: 100;
+    width: auto;
   }
 
   .search-button {
@@ -874,8 +879,8 @@ Mobile view styles
     height: 32px;
   }
 
-  #search {
-    width: 100%;
+  #search.search.active {
+    width: auto;
   }
 
   #search-wrapper {
@@ -884,7 +889,7 @@ Mobile view styles
   }
 
   #searchform.search-item {
-    width: 90%;
+    width: 100%;
     padding: 0.3em;
   }
 
@@ -909,6 +914,10 @@ Mobile view styles
   #search-wrapper {
     text-align: center;
     padding-top: 10px;
+  }
+
+  div#search-wrapper {
+    width: auto;
   }
 
   #search-wrapper .search-item {
@@ -1048,8 +1057,13 @@ Computer view styles
   }
 
   /*search styles*/
-  #search {
-    width: 100%;
+  #search.search {
+    margin-left: 0.2em;
+    width: auto;
+  }
+
+  #search.search.active {
+    width: auto;
   }
 
   #search-wrapper {
@@ -1058,7 +1072,7 @@ Computer view styles
   }
 
   #searchform.search-item {
-    width: 90%;
+    width: auto;
     padding: 0.3em;
   }
 
