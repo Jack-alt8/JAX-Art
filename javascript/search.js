@@ -35,7 +35,7 @@ const artList = [
     type: "Collage",
     date: "01/03/20",
     listenedto: "",
-    series: "",
+    series: "/",
   },
   {
     imgsrc: "../artimages/birmingham-museums-trust-field-unsplash.jpg",
@@ -81,7 +81,7 @@ const artList = [
     type: "Landscape",
     date: "11/20/21",
     listenedto: "",
-    series: "birmingham series",
+    series: "Birmingham series",
   },
   {
     imgsrc: "../artimages/birmingham-museums-trust-trees-unsplash.jpg",
@@ -99,7 +99,7 @@ const artList = [
     type: "Painting/ Abstract art",
     date: "04/24/22",
     listenedto: "",
-    series: "",
+    series: "/",
   },
   {
     imgsrc: "../artimages/jason-leung-unsplash.jpg",
@@ -108,7 +108,7 @@ const artList = [
     type: "Photography",
     date: "09/30/23",
     listenedto: "",
-    series: "",
+    series: "/",
   },
   {
     imgsrc: "../artimages/joel-filipe-unsplash.jpg",
@@ -117,7 +117,7 @@ const artList = [
     type: "Digital art",
     date: "10/01/23",
     listenedto: "",
-    series: "",
+    series: "/",
   },
   {
     imgsrc: "../artimages/maria-orlova-unsplash.jpg",
@@ -126,7 +126,7 @@ const artList = [
     type: "Painting/ Abstract art",
     date: "10/28/23",
     listenedto: "",
-    series: "",
+    series: "/",
   },
   {
     imgsrc: "../artimages/meric-dagli-unsplash.jpg",
@@ -135,7 +135,7 @@ const artList = [
     type: "Digital art/ Abstract art",
     date: "11/09/23",
     listenedto: "",
-    series: "",
+    series: "/",
   },
 ];
 

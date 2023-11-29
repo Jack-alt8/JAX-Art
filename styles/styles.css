@@ -264,17 +264,6 @@ img#result-image.result-image {
   width: 100%;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: fit-content;
-  margin: auto;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 0 1em;
-}
-
 .mySlides {
   display: flex;
   flex-direction: column;
@@ -1023,8 +1012,8 @@ Computer view styles
     flex-direction: column;
     top: 0;
     left: 0;
-    height: 90%;
-    width: 30%;
+    height: 26em;
+    width: 12em;
     padding: 0;
     border: 2px solid #aa14f0;
   }
@@ -1037,7 +1026,7 @@ Computer view styles
   .sidebar {
     border: 3px solid #aa14f0;
     border-top: 5px solid #aa14f0;
-    height: 100%;
+    height: 26em;
   }
 
   .navbar {
@@ -1071,8 +1060,9 @@ Computer view styles
   main {
     width: 70%;
     min-height: 85%;
-    margin-left: 30%;
-    padding: 0 0 2.2em 0;
+    margin-left: 12em;
+    padding: 0 0 0 0;
+    padding-bottom: auto;
     top: 0;
     right: 0;
   }
@@ -1114,6 +1104,16 @@ Computer view styles
     border-radius: 10%;
   }
 
+  .home-content {
+    width: 100%;
+  }
+
+  .home-main {
+    width: auto;
+    justify-content: center;
+    padding-bottom: 1.2em;
+  }
+
   /*search styles*/
   div#search-wrapper {
     width: auto;
@@ -1134,7 +1134,7 @@ Computer view styles
   }
 
   input#searchbar.searchbar {
-    width: 80%;
+    width: 85%;
     padding: 0 0.4em;
     margin-left: 0;
   }
@@ -1151,19 +1151,33 @@ Computer view styles
 
   /* Slideshow container */
   .slideshow-container {
-    max-width: fit-content;
-    margin: auto;
+    max-width: 100%;
+    margin: 0.5em;
     overflow-x: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0 1em;
+    padding: 0; 
+    height: auto;
   }
 
   .mySlides {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: auto;
+    width: 100%;
+  }
+  
+  #scroll-image-wrapper.image-wrapper {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #slide-image {
+    max-width: 24em;
+    height: 20em;
   }
 
   /* Hide the images by default */
@@ -1178,9 +1192,9 @@ Computer view styles
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 0.5em;
     color: rgb(68, 68, 68);
-    background-color: #000000;
+    background-color: transparent;
     font-weight: bold;
     font-size: 2em;
     transition: 0.6s ease;
