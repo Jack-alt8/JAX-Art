@@ -1157,7 +1157,7 @@ Computer view styles
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0; 
+    padding: 0;
     height: auto;
   }
 
@@ -1168,7 +1168,7 @@ Computer view styles
     height: auto;
     width: 100%;
   }
-  
+
   #scroll-image-wrapper.image-wrapper {
     padding: 0.5em;
     display: flex;

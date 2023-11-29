@@ -3,4 +3,3 @@
 
 // Keeping conyright recent
 document.write(/\d{4}/.exec(Date())[0]);
-//delete exec
