@@ -143,6 +143,7 @@ main {
   padding-top: 5em;
   padding-bottom: 3em;
   min-height: 85%;
+  overflow: hidden;
 }
 
 /*
@@ -214,8 +215,6 @@ div#home-content.home-content {
 .searchbutton :hover {
   filter: invert(90%);
 }
-
-
 
 /* Caption text */
 #artname-text, 
@@ -290,6 +289,19 @@ div#home-content.home-content {
 #date-created-text, 
 #listened-to-text, 
 #series-text {
+  color: #585858;
+  font-size: 0.9em;
+  padding: 0.1em 0.5em;
+  bottom: 0.1em;
+  width: 100%;
+}
+
+.art-name-text, 
+.size-text, 
+.type-of-art-text, 
+.date-created-text, 
+.listened-to-text, 
+.series-text {
   color: #585858;
   font-size: 0.9em;
   padding: 0.1em 0.5em;
@@ -743,11 +755,6 @@ Mobile view styles
     filter: invert(100%);
   }
 
-  main {
-    padding: auto;
-    overflow: hidden;
-  }
-
   /*
   ===========================================================
   Home page styles (mobile view specific)
@@ -765,6 +772,53 @@ Mobile view styles
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .home-main {
+    padding-top: 0;
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .mobile-image-scroll {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+  }
+
+  #scroll-image-wrapper.image-wrapper {
+    padding: 1em;
+  }
+
+  #scroll-image {
+    width: 25em;
+    height: auto;
+  }
+
+  /*image scroll styles*/
+  #scroll-art-name-text, 
+  #scroll-size-text, 
+  #scroll-type-of-art-text, 
+  #scroll-date-created-text, 
+  #scroll-listened-to-text, 
+  #scroll-series-text {
+    color: #585858;
+    font-size: 0.9em;
+    padding: 0.1em 0.5em;
+    bottom: 0.1em;
+    width: 100%;
+  }
+
+  h5#scroll-art-name-text {
+    margin-left: 0;
+    font-size: 1em;
   }
 
   /*gallery view button styles*/
@@ -961,6 +1015,9 @@ Computer view styles
   Home page styles (computer specific)
   ==================================================================
   */
+  .mobile-image-scroll {
+    display: none;
+  } 
 
   .home-nav {
     display: flex;

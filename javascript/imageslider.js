@@ -11,8 +11,6 @@
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
 
-
-
 // Next/previous controls
 prevButton.addEventListener("click", () =>
     plusSlides(-1)
