@@ -152,10 +152,10 @@ Home page styles
 =============================================================================
 */
 div#home-content.home-content {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
 .search {
   width: 100%;
@@ -165,10 +165,10 @@ div#home-content.home-content {
 }
 
 .home-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 /*searchbar styles*/
 #search-wrapper {
@@ -179,7 +179,8 @@ div#home-content.home-content {
   width: 100%;
 }
 
-#search-wrapper > .search-item > input, button {
+#search-wrapper > .search-item > input,
+button {
   list-style: none;
   margin: 0 5px 0 5px;
 }
@@ -226,12 +227,35 @@ div#home-content.home-content {
   filter: invert(90%);
 }
 
+/*search result styles*/
+div#result.search-item {
+  padding: 0.5em;
+}
+
+img#result-image.result-image {
+  padding: 0.1em;
+}
+
+#result-artname-text,
+#result-size-text,
+#result-type-of-art-text,
+#result-date-text,
+#result-listened-to-text,
+#result-series-text {
+  color: #313131;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 0.1em 0.5em;
+  bottom: 0.1em;
+  width: 100%;
+}
+
 /* Caption text */
-#artname-text, 
-#size-text, 
-#type-of-art-text, 
-#date-text, 
-#listened-to-text, 
+#artname-text,
+#size-text,
+#type-of-art-text,
+#date-text,
+#listened-to-text,
 #series-text {
   color: #585858;
   font-size: 0.9em;
@@ -251,7 +275,7 @@ div#home-content.home-content {
   padding: 0 1em;
 }
 
-.mySlides{
+.mySlides {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -293,11 +317,11 @@ div#home-content.home-content {
 }
 
 /* Caption text */
-#art-name-text, 
-#size-text, 
-#type-of-art-text, 
-#date-created-text, 
-#listened-to-text, 
+#art-name-text,
+#size-text,
+#type-of-art-text,
+#date-created-text,
+#listened-to-text,
 #series-text {
   color: #585858;
   font-size: 0.9em;
@@ -306,11 +330,11 @@ div#home-content.home-content {
   width: 100%;
 }
 
-.art-name-text, 
-.size-text, 
-.type-of-art-text, 
-.date-created-text, 
-.listened-to-text, 
+.art-name-text,
+.size-text,
+.type-of-art-text,
+.date-created-text,
+.listened-to-text,
 .series-text {
   color: #585858;
   font-size: 0.9em;
@@ -416,7 +440,7 @@ h3.about-statement {
   width: 95%;
 }
 
-.about-p p{
+.about-p p {
   color: white;
   text-indent: 3.1em;
   text-align: left;
@@ -451,7 +475,7 @@ nav.about-socials {
   position: static;
 }
 
-.about-socials img{
+.about-socials img {
   height: 3.1em;
 }
 
@@ -506,7 +530,9 @@ form h3 {
   margin-bottom: 20px;
 }
 
-div.email-input, div.subject-input, div.message-input {
+div.email-input,
+div.subject-input,
+div.message-input {
   padding-top: 1.5em;
 }
 
@@ -528,7 +554,8 @@ label.placeholders {
   padding-right: 0.5em;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   border: 0.3em solid #393939;
   border-radius: 0.94em;
   margin: 10px 0;
@@ -544,7 +571,8 @@ form textarea {
   width: 20em;
 }
 
-form input:focus:required, form textarea:focus:required {
+form input:focus:required,
+form textarea:focus:required {
   border: 0.3em solid #7e0fb1;
   border-radius: 0.94em;
   background: #cccccc;
@@ -580,13 +608,16 @@ form div img {
   color: #353535;
 }
 
-.required-text, .email-check-text, .message-length-error {
+.required-text,
+.email-check-text,
+.message-length-error {
   color: #9d9d9d;
   display: block;
   font-size: 15px;
 }
 
-.required-error, .email-error {
+.required-error,
+.email-error {
   color: red;
   font-size: 16px;
   letter-spacing: 0.063em;
@@ -676,9 +707,9 @@ nav > img {
 }
 
 /*Universal active class functionality (don't touch!)*/
-  .active {
-    display: block; 
-  }
+.active {
+  display: block;
+}
 
 /*
 ----------------------------------------------------------------------
@@ -810,11 +841,11 @@ Mobile view styles
   }
 
   /*image scroll styles*/
-  #scroll-art-name-text, 
-  #scroll-size-text, 
-  #scroll-type-of-art-text, 
-  #scroll-date-created-text, 
-  #scroll-listened-to-text, 
+  #scroll-art-name-text,
+  #scroll-size-text,
+  #scroll-type-of-art-text,
+  #scroll-date-created-text,
+  #scroll-listened-to-text,
   #scroll-series-text {
     color: #585858;
     font-size: 0.9em;
@@ -958,7 +989,6 @@ Computer view styles
 --------------------------------------------------------------------------------
 */
 @media only screen and (min-width: 768px) {
-
   header {
     flex-direction: column;
     top: 0;
@@ -1024,7 +1054,7 @@ Computer view styles
   */
   .mobile-image-scroll {
     display: none;
-  } 
+  }
 
   .home-nav {
     display: flex;
@@ -1089,6 +1119,59 @@ Computer view styles
     margin-right: 0.05;
   }
 
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: fit-content;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0 1em;
+  }
+
+  .mySlides {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(68, 68, 68);
+    background-color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    transition: 0.6s ease;
+    border: 0px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    color: rgba(190, 190, 190, 0.8);
+  }
+
+  /*home button styles*/
   button.search-word-button {
     padding-right: 1.2em;
     border: 10px;
@@ -1098,7 +1181,7 @@ Computer view styles
   }
 
   button.search-word-button p {
-    font-size: 1.50em;
+    font-size: 1.5em;
     color: #585858;
   }
 

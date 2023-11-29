@@ -159,12 +159,12 @@ function findArtListMatch(searchString) {
 
 //grabbing html elements for displaying
 const resultImage = document.getElementById("result-image");
-const artNameText = document.getElementById("artname-text");
-const sizeText = document.getElementById("size-text");
-const typeOfArtText = document.getElementById("type-of-art-text");
-const dateText = document.getElementById("date-text");
-const listenedToText = document.getElementById("listened-to-text");
-const seriesText = document.getElementById("series-text");
+const artNameText = document.getElementById("result-artname-text");
+const sizeText = document.getElementById("result-size-text");
+const typeOfArtText = document.getElementById("result-type-of-art-text");
+const dateText = document.getElementById("result-date-text");
+const listenedToText = document.getElementById("result-listened-to-text");
+const seriesText = document.getElementById("result-series-text");
 
 function displayArt(matchingArt) {
   if (matchingArt.length > 0) {
@@ -187,12 +187,12 @@ function displayArt(matchingArt) {
     console.log("no results");
     resultImage.style.display = "none";
     document.getElementById("result-image").setAttribute("src", "");
-    document.getElementById("artname-text").innerHTML = "Art not found";
-    document.getElementById("size-text").innerHTML = "";
-    document.getElementById("type-of-art-text").innerHTML = "";
-    document.getElementById("date-text").innerHTML = "";
-    document.getElementById("listened-to-text").innerHTML = "";
-    document.getElementById("series-text").innerHTML = "";
+    document.getElementById("result-artname-text").innerHTML = "Art not found";
+    document.getElementById("result-size-text").innerHTML = "";
+    document.getElementById("result-type-of-art-text").innerHTML = "";
+    document.getElementById("result-date-text").innerHTML = "";
+    document.getElementById("result-listened-to-text").innerHTML = "";
+    document.getElementById("result-series-text").innerHTML = "";
   }
 };
 
@@ -220,12 +220,12 @@ searchButton.addEventListener("click", (e) => {
     console.log("no results");
     resultImage.style.display = "none";
     document.getElementById("result-image").setAttribute("src", "");
-    document.getElementById("artname-text").innerHTML = "";
-    document.getElementById("size-text").innerHTML = "";
-    document.getElementById("type-of-art-text").innerHTML = "";
-    document.getElementById("date-text").innerHTML = "";
-    document.getElementById("listened-to-text").innerHTML = "";
-    document.getElementById("series-text").innerHTML = "";
+    document.getElementById("result-artname-text").innerHTML = "";
+    document.getElementById("result-size-text").innerHTML = "";
+    document.getElementById("result-type-of-art-text").innerHTML = "";
+    document.getElementById("result-date-text").innerHTML = "";
+    document.getElementById("result-listened-to-text").innerHTML = "";
+    document.getElementById("result-series-text").innerHTML = "";
   }
 });
 
@@ -253,12 +253,12 @@ searchBar.addEventListener("keyup", (e) => {
     console.log("no results");
     resultImage.style.display = "none";
     document.getElementById("result-image").setAttribute("src", "");
-    document.getElementById("artname-text").innerHTML = "";
-    document.getElementById("size-text").innerHTML = "";
-    document.getElementById("type-of-art-text").innerHTML = "";
-    document.getElementById("date-text").innerHTML = "";
-    document.getElementById("listened-to-text").innerHTML = "";
-    document.getElementById("series-text").innerHTML = "";
+    document.getElementById("result-artname-text").innerHTML = "";
+    document.getElementById("result-size-text").innerHTML = "";
+    document.getElementById("result-type-of-art-text").innerHTML = "";
+    document.getElementById("result-date-text").innerHTML = "";
+    document.getElementById("result-listened-to-text").innerHTML = "";
+    document.getElementById("result-series-text").innerHTML = "";
   }
 });
 
@@ -278,12 +278,12 @@ searchBar.addEventListener("input", function (e) {
   } else {
     resultImage.style.display = "none";
     document.getElementById("result-image").setAttribute("src", "");
-    document.getElementById("artname-text").innerHTML = "";
-    document.getElementById("size-text").innerHTML = "";
-    document.getElementById("type-of-art-text").innerHTML = "";
-    document.getElementById("date-text").innerHTML = "";
-    document.getElementById("listened-to-text").innerHTML = "";
-    document.getElementById("series-text").innerHTML = "";
+    document.getElementById("result-artname-text").innerHTML = "";
+    document.getElementById("result-size-text").innerHTML = "";
+    document.getElementById("result-type-of-art-text").innerHTML = "";
+    document.getElementById("result-date-text").innerHTML = "";
+    document.getElementById("result-listened-to-text").innerHTML = "";
+    document.getElementById("result-series-text").innerHTML = "";
     e.preventDefault();
     return false;
   }
