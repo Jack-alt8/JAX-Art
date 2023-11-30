@@ -31,5 +31,93 @@ return ` <div id="result" class="result">
 
 for index.html 
 ---------------------------------------
-<div id="search-results" class="search-results">
+<div id="search" class="search">
+                <div id="search-wrapper" class="search-item">
+                    <div class="search-item">
+                        <button id="searchbutton" class="searchbutton" type="button"><img
+                                src="icons/search_FILL0_wght400_GRAD0_opsz24.webp" alt="search-button"></button>
+                    </div>
+                    <div id="searchform" class="search-item">
+                        <input type="search" id="searchbar" class="searchbar" name="searchbar"
+                            placeholder="Search for a specific work...">
+                    </div>
+                    <div id="search-results" class="search-results">
+                      <div id="result" class="search-item">
+                        <img id="result-image" class="result-image" src="" alt="result art" width="100" height="100">
+                        <h3 id="result-artname-text" class="art-name-text"></h3>
+                        <p id="result-size-text" class="size-text"></p>
+                        <p id="result-type-of-art-text" class="type-of-art-text"></p>
+                        <p id="result-date-text" class="date-created-text"></p>
+                        <p id="result-listened-to-text" class="listened-to-text"></p>
+                        <p id="result-series-text" class="series-text"></p>
+                      </div>
+                    </div>
+                </div>
+                
 </div>
+
+styles.css 
+------------------------------------------------------------------------------------------------------------------------------
+.search {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#artList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.result {
+    list-style-type: none;
+    background-color: #eaeaea; //change colors
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.result > h3 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.result > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.result > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+

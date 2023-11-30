@@ -213,21 +213,43 @@ button {
   width: 100%;
 }
 
-.searchbar input {
-  border: 10px;
-  width: 100%;
-}
-
-.search-item .searchbar input {
+.search-item input.searchbar {
   border: 10px;
   padding: 0.5em;
   outline: none;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
+/*active and hover for search button*/
 .searchbutton :hover {
   filter: invert(90%);
+}
+
+.searchbutton :active {
+  filter: invert(90%);
+}
+
+/*using my own x for reseting search bar*/
+.search-item input.searchbar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    height: 20px;
+    width: 20px;
+    background-image: url("../icons/icons8-x-48.webp");
+}
+
+.search-item input.searchbar::-webkit-search-cancel-button:hover {
+    background-image: url("../icons/icons8-x-48.webp");
+    filter: invert(90%);
+}
+
+.search-item input.searchbar::-webkit-search-cancel-button:active {
+    background-image: url("../icons/icons8-x-48.webp");
+    filter: invert(90%);
 }
 
 /*search result styles*/
@@ -267,47 +289,6 @@ img#result-image.result-image {
   width: 100%;
 }
 
-.mySlides {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(68, 68, 68);
-  background-color: #000000;
-  font-weight: bold;
-  font-size: 2em;
-  transition: 0.6s ease;
-  border: 0px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  color: rgba(190, 190, 190, 0.8);
-}
-
 /* Caption text */
 #art-name-text,
 #size-text,
@@ -333,14 +314,6 @@ img#result-image.result-image {
   padding: 0.1em 0.5em;
   bottom: 0.1em;
   width: 100%;
-}
-
-/* Number text (1/12 etc) */
-.numbertext {
-  color: #979797;
-  font-size: 12px;
-  padding: 8px 12px;
-  top: 0;
 }
 
 /*
@@ -472,7 +445,8 @@ nav.about-socials {
   width: 3em;
 }
 
-nav.about-socials img.instagram, nav.about-socials img.youtube {
+nav.about-socials img.instagram,
+nav.about-socials img.youtube {
   height: 3.5em;
   width: 3.5em;
 }
@@ -1227,6 +1201,14 @@ Computer view styles
   .prev:hover,
   .next:hover {
     color: rgba(190, 190, 190, 0.8);
+  }
+
+  /* Number text (1/12 etc) */
+  .numbertext {
+    color: #979797;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
   }
 
   /*home button styles*/
