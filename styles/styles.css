@@ -98,14 +98,14 @@ header {
 }
 
 .instagram {
-  height: 18px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   filter: invert(75%);
 }
 
 .youtube {
-  height: 18px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   filter: invert(75%);
 }
 
@@ -470,6 +470,11 @@ nav.about-socials {
 .about-socials img {
   height: 3.1em;
   width: 3em;
+}
+
+nav.about-socials img.instagram, nav.about-socials img.youtube {
+  height: 3.5em;
+  width: 3.5em;
 }
 
 .about-socials img:hover {
