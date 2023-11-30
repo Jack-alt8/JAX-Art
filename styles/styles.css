@@ -944,6 +944,11 @@ Mobile view styles
     width: 100%;
   }
 
+  #gallery-art-image {
+    height: 10em;
+    width: auto;
+  }
+
   #gallery-art-name-text {
     font-weight: 900;
   }
