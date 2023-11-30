@@ -542,7 +542,7 @@ form div img {
 .submit-button {
   padding: 15px;
   background: #aa14f0;
-  color: #242424;
+  color: #181818;
   font-size: 18px;
   font-weight: 600;
   border: 0;
@@ -555,12 +555,12 @@ form div img {
 
 .submit-button:hover {
   background: #0030ff;
-  color: #353535;
+  color: #c2bfbf;
 }
 
 .submit-button:active {
   background: #0030ff;
-  color: #353535;
+  color: #c2bfbf;
 }
 
 .required-text,
