@@ -29,7 +29,7 @@ const result = document.getElementById("result");
 // list of artimages tagged with descriptions
 const artList = [
   {
-    imgsrc: "../artimages/alice-donovan-rouse-unsplash.jpg",
+    imgsrc: "../artimages/alice-donovan-rouse-unsplash.webp",
     name: "Hico Jill",
     size: "600px by 400px",
     type: "Collage",
@@ -38,7 +38,7 @@ const artList = [
     series: "/",
   },
   {
-    imgsrc: "../artimages/birmingham-museums-trust-field-unsplash.jpg",
+    imgsrc: "../artimages/birmingham-museums-trust-field-unsplash.webp",
     name: "Grain Fields",
     size: "800px by 400px",
     type: "Landscape",
@@ -47,7 +47,7 @@ const artList = [
     series: "Birmingham series",
   },
   {
-    imgsrc: "../artimages/birmingham-museums-trust-mountain-path-unsplash.jpg",
+    imgsrc: "../artimages/birmingham-museums-trust-mountain-path-unsplash.webp",
     name: "Mountain path",
     size: "600px by 400px",
     type: "Landscape",
@@ -56,7 +56,7 @@ const artList = [
     series: "Birmingham series",
   },
   {
-    imgsrc: "../artimages/birmingham-museums-trust-mountain-river-unsplash.jpg",
+    imgsrc: "../artimages/birmingham-museums-trust-mountain-river-unsplash.webp",
     name: "Mountain river",
     size: "200px by 400px",
     type: "Landscape",
@@ -66,7 +66,7 @@ const artList = [
   },
   {
     imgsrc:
-      "../artimages/birmingham-museums-trust-mountain-waterfall-unsplash.jpg",
+      "../artimages/birmingham-museums-trust-mountain-waterfall-unsplash.webp",
     name: "Mountain waterfall",
     size: "200px by 400px",
     type: "Landscape",
@@ -75,7 +75,7 @@ const artList = [
     series: "Birmingham series",
   },
   {
-    imgsrc: "../artimages/birmingham-museums-trust-sheep-herder-unsplash.jpg",
+    imgsrc: "../artimages/birmingham-museums-trust-sheep-herder-unsplash.webp",
     name: "Sheep Herder",
     size: "250px by 400px",
     type: "Landscape",
@@ -84,7 +84,7 @@ const artList = [
     series: "Birmingham series",
   },
   {
-    imgsrc: "../artimages/birmingham-museums-trust-trees-unsplash.jpg",
+    imgsrc: "../artimages/birmingham-museums-trust-trees-unsplash.webp",
     name: "Faded trees",
     size: "250px by 400px",
     type: "Landscape",
@@ -93,7 +93,7 @@ const artList = [
     series: "Birmingham series",
   },
   {
-    imgsrc: "../artimages/geordanna-spirit-unsplash.jpg",
+    imgsrc: "../artimages/geordanna-spirit-unsplash.webp",
     name: "Spirit",
     size: "250px",
     type: "Painting/ Abstract art",
@@ -102,7 +102,7 @@ const artList = [
     series: "/",
   },
   {
-    imgsrc: "../artimages/jason-leung-unsplash.jpg",
+    imgsrc: "../artimages/jason-leung-unsplash.webp",
     name: "Love the Corner",
     size: "200px by 400px",
     type: "Photography",
@@ -111,7 +111,7 @@ const artList = [
     series: "/",
   },
   {
-    imgsrc: "../artimages/joel-filipe-unsplash.jpg",
+    imgsrc: "../artimages/joel-filipe-unsplash.webp",
     name: "Sun Splash",
     size: "250px by 400pc",
     type: "Digital art",
@@ -120,7 +120,7 @@ const artList = [
     series: "/",
   },
   {
-    imgsrc: "../artimages/maria-orlova-unsplash.jpg",
+    imgsrc: "../artimages/maria-orlova-unsplash.webp",
     name: "Purple Foam",
     size: "200px by 400px",
     type: "Painting/ Abstract art",
@@ -129,7 +129,7 @@ const artList = [
     series: "/",
   },
   {
-    imgsrc: "../artimages/meric-dagli-unsplash.jpg",
+    imgsrc: "../artimages/meric-dagli-unsplash.webp",
     name: "True Feeling",
     size: "200px by 400px",
     type: "Digital art/ Abstract art",

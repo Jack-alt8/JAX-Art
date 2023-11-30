@@ -8,4 +8,3 @@ const naviList = document.getElementById("nav-list");
 toggleButton.addEventListener("click", () =>
   naviList.classList.toggle("active")
 );
-
