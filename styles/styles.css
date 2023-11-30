@@ -859,7 +859,7 @@ Mobile view styles
   }
 
   #scroll-image {
-    width: 25em;
+    width: 16em;
     height: auto;
   }
 
@@ -881,10 +881,8 @@ Mobile view styles
   /*gallery view*/
   .all-images {
     align-items: flex-start;
-  }
-
-  .art-images {
-    height: 6em;
+    margin-top: 0;
+    padding: 1em;
   }
 
   #gallery-art-name-text,
@@ -893,14 +891,14 @@ Mobile view styles
   #gallery-date-created-text,
   #gallery-listened-to-text,
   #gallery-series-text {
-    font-size: 0.8em;
+    font-size: 0.5em;
     font-weight: 700;
     padding: 0.05em 0.2em;
     letter-spacing: 0.05em;
   }
 
   #gallery-art-image {
-    height: 10em;
+    height: 5em;
     width: auto;
   }
 
@@ -949,6 +947,18 @@ Mobile view styles
   About page styles (mobile view specific)
   ===========================================================
   */
+  .about-statement{
+    font-size: 1.2em;
+  } 
+  
+  .about-bio {
+    font-size: 1em;
+  }
+
+  .about-p {
+    font-size: 0.8em;
+  }
+
   aside {
     text-align: center;
   }
@@ -958,6 +968,23 @@ Mobile view styles
     max-height: 60%;
     width: "device-width";
     height: "425px";
+  }
+
+  /*
+  ============================================================
+  Contact page styles (mobile view specific)
+  ============================================================
+  */
+  form#contact-form {
+    padding: 32px 0;
+  }
+
+  p.email-check-text, p.email-error, p.message-length-error {
+    font-size: 0.8em;
+  }
+
+  textarea#message {
+    width: 16em;
   }
 
   /*Universal active class functionality (don't touch!)*/
@@ -1026,7 +1053,7 @@ Computer view styles
     min-height: 85%;
     margin-left: 12em;
     padding: 0 0 0 0;
-    padding-bottom: auto;
+    padding-bottom: 5em;
     top: 0;
     right: 0;
   }
@@ -1036,6 +1063,10 @@ Computer view styles
   Home page styles (computer specific)
   ==================================================================
   */
+  main.home-main {
+    padding-bottom: 10em;
+  }
+
   .mobile-image-scroll {
     display: none;
   }
@@ -1078,34 +1109,32 @@ Computer view styles
     padding-bottom: 1.2em;
   }
 
-  /*search styles*/
-  div#search-wrapper {
-    width: auto;
-  }
-
+  /*search styles*/ 
   div#search.search {
     margin-left: 0.2em;
-  }
-
-  #search-wrapper {
-    padding: 0.5em;
-    border: 0.3em solid #aa14f0;
-  }
-
-  #searchform.search-item {
-    width: 80%;
-    padding: 0.3em;
-  }
-
-  input#searchbar.searchbar {
-    width: 85%;
-    padding: 0 0.4em;
-    margin-left: 0;
+    width: 90%;
   }
 
   .search-button img {
     height: 4em;
     width: 4em;
+  }
+
+  div#search-wrapper {
+    padding: 0.3em;
+    border: 0.3em solid #aa14f0;
+    width: auto;
+    padding-top: 10px;
+  }
+
+  div#searchform.search-item {
+    width: 100%;
+  }
+
+  input#searchbar.searchbar {
+    width: 80%;
+    padding: 0 0.4em;
+    margin-left: 0;
   }
 
   .searchbutton {
