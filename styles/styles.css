@@ -275,45 +275,28 @@ img#result-image.result-image {
   width: 100%;
 }
 
-/* Caption text */
-#artname-text,
-#size-text,
-#type-of-art-text,
-#date-text,
-#listened-to-text,
-#series-text {
-  color: #585858;
+#result-artname-text {
   font-size: 0.9em;
-  padding: 0.1em 0.5em;
-  bottom: 0.1em;
-  width: 100%;
+  font-weight: 700;
 }
 
 /* Caption text */
-#art-name-text,
-#size-text,
-#type-of-art-text,
-#date-created-text,
-#listened-to-text,
-#series-text {
-  color: #585858;
-  font-size: 0.9em;
-  padding: 0.1em 0.5em;
-  bottom: 0.1em;
-  width: 100%;
-}
-
 .art-name-text,
 .size-text,
 .type-of-art-text,
 .date-created-text,
 .listened-to-text,
 .series-text {
-  color: #585858;
+  color: #949494;
   font-size: 0.9em;
   padding: 0.1em 0.5em;
   bottom: 0.1em;
   width: 100%;
+}
+
+.art-name-text {
+  font-size: 1em;
+  font-weight: 600;
 }
 
 /*
@@ -887,11 +870,7 @@ Mobile view styles
   #scroll-date-created-text,
   #scroll-listened-to-text,
   #scroll-series-text {
-    color: #585858;
-    font-size: 0.9em;
-    padding: 0.1em 0.5em;
-    bottom: 0.1em;
-    width: 100%;
+    font-size: 1em;
   }
 
   h5#scroll-art-name-text {
@@ -914,13 +893,10 @@ Mobile view styles
   #gallery-date-created-text,
   #gallery-listened-to-text,
   #gallery-series-text {
-    color: #585858;
     font-size: 0.8em;
     font-weight: 700;
     padding: 0.05em 0.2em;
-    bottom: 0.05em;
     letter-spacing: 0.05em;
-    width: 100%;
   }
 
   #gallery-art-image {
