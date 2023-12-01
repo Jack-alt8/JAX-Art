@@ -891,7 +891,7 @@ Mobile view styles
   #gallery-date-created-text,
   #gallery-listened-to-text,
   #gallery-series-text {
-    font-size: 0.5em;
+    font-size: 0.8em;
     font-weight: 700;
     padding: 0.05em 0.2em;
     letter-spacing: 0.05em;
@@ -1004,7 +1004,7 @@ Computer view styles
     top: 0;
     left: 0;
     height: 26em;
-    width: 12em;
+    width: 14em;
     padding: 0;
     border: 2px solid #aa14f0;
   }
@@ -1050,12 +1050,15 @@ Computer view styles
 
   main {
     width: 70%;
-    min-height: 85%;
-    margin-left: 12em;
-    padding: 0 0 0 0;
-    padding-bottom: 5em;
+    height: 100%;
+    margin-left: 14em;
+    padding: 3em 0 5em;
     top: 0;
     right: 0;
+    margin-top: auto;
+    min-height: 50%;
+    max-height: 100%;
+    overflow-y: visible;
   }
 
   /*
@@ -1063,9 +1066,6 @@ Computer view styles
   Home page styles (computer specific)
   ==================================================================
   */
-  main.home-main {
-    padding-bottom: 10em;
-  }
 
   .mobile-image-scroll {
     display: none;
@@ -1106,7 +1106,9 @@ Computer view styles
   .home-main {
     width: auto;
     justify-content: center;
-    padding-bottom: 1.2em;
+    padding-top: 0;
+    padding-bottom: 0.6em;
+    overflow-y: hidden;
   }
 
   /*search styles*/ 
@@ -1132,7 +1134,7 @@ Computer view styles
   }
 
   input#searchbar.searchbar {
-    width: 80%;
+    width: 75%;
     padding: 0 0.4em;
     margin-left: 0;
   }
@@ -1151,6 +1153,7 @@ Computer view styles
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0;
+    padding-top: 5em;
     height: auto;
   }
 
@@ -1160,18 +1163,34 @@ Computer view styles
     flex-wrap: nowrap;
     height: auto;
     width: 100%;
+    text-align: center;
   }
 
   #scroll-image-wrapper.image-wrapper {
-    padding: 0.5em;
+    padding: 0.5em auto;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   #slide-image {
     max-width: 24em;
     height: 20em;
   }
+
+  div.slide-description {
+    padding-top: 2em;
+    text-align: center
+  }
+
+  #art-name-text, 
+  #size-text, 
+  #type-of-art-text, 
+  #date-created-text, 
+  #listened-to-text, 
+  #series-text {
+    text-align: left;
+  } 
 
   /* Hide the images by default */
   .mySlides {
@@ -1249,8 +1268,9 @@ Computer view styles
   Gallery page styles (computer view specific)
   ==========================================================
   */
-  .all-images {
+  div.all-images {
     margin-top: 0;
+    padding-bottom: 3em;
   }
 
   /*
@@ -1273,6 +1293,12 @@ Computer view styles
     width: "device-width";
     height: "425px";
   }
+
+  /*
+  =========================================================
+  Contact page (computer view specific styles)
+  ========================================================
+  */
 
   /*nav styles*/
   .nav-list .list-item a:hover {
