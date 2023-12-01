@@ -589,14 +589,14 @@ Button properties
 /*nav styles*/
 .nav-list .list-item a:hover {
   color: #dddddd;
-  padding: 0px 125px 7px;
+  padding: 0px 90px 7px;
   border-bottom: 0.5rem solid #0030ff;
   border-radius: 10%;
 }
 
 .nav-list .list-item a:active {
   color: #dddddd;
-  padding: 0px 125px 7px;
+  padding: 0px 90px 7px;
   border-bottom: 0.5rem solid #0030ff;
   border-radius: 10%;
 }
@@ -761,7 +761,7 @@ Mobile view styles
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -1331,4 +1331,73 @@ Tablet styles
   .contact-main {
     padding-bottom: 23em;
   }
+}
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+  
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+  
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+  
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+  
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+  
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+  
+}
+
+/*
+========================================================
+Very thin devices' (like the galaxy fold) styles
+========================================================
+*/
+
+@media all and (min-width: 0px) and (max-width: 320px) {
+  h1.main-title {
+    font-size: 15px;
+  }
+
+  h2.sub-title {
+    font-size: 12px;
+  }
+
+  img.instagram, img.youtube {
+    width: 17px;
+    height: 17px;
+  }
+
+  img.vsco {
+    width: 15px;
+    height: 15px;
+  }
+
+  div.mobile-buttons-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: flex-end;
+  }
+
+  .mobile-buttons-nav button {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-buttons-nav button img {
+    height: 25px;
+    width: 25px;
+  }
+  
 }
