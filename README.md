@@ -3,7 +3,7 @@
 <h2 align="center"> About </h2>
 
 Jack C. Baylor - JAX-Art is a gallery of my art, a website that talks about myself, my art-journey, and allows for networking.
-The website is simple to navigate and includes links to my social media profiles for publicity support. To see my work, go to the home page and swipe through various pictures of my art and their descriptions, you can also use gallery view to see a compilation of my work. If you want to find something specific, you can use the search bar to find a certain kind of art or search by ame, date, artseeries, size, and even what I listened to while making the piece. Read about me on the about page. Finally, you can contact me on the contact page and don't forget to write your email in correctly (the website will catch any mistakes in the email input as well as check if you filled in all required fields).
+The website is simple to navigate and includes links to my social media profiles for publicity support. To see my work, go to the home page and swipe through various pictures of my art and their descriptions, you can also use gallery view to see a compilation of my work. If you want to find something specific, you can use the search bar to find a certain kind of art or search by name, date, art series, and size. Read about me on the about page. Finally, you can contact me on the contact page and don't forget to write your email in correctly (the website will catch any mistakes in the email input as well as check if you filled in all required fields).
 
 <h2 align="center"> To run locally: </h2>
 
