@@ -3,8 +3,9 @@
 
 // Hamburger functionality
 const toggleButton = document.getElementById("toggle-button");
-const naviList = document.getElementById("nav-list");
+const navList = document.getElementById("nav-list");
+const homeNav = document.getElementById("home-nav");
 
 toggleButton.addEventListener("click", () =>
-  naviList.classList.toggle("active")
+  navList.classList.toggle("active")
 );

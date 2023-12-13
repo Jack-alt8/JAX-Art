@@ -585,6 +585,32 @@ form div img {
 Button properties
 -----------------------------------------------------------------------
 */
+/*hamburger styles*/
+  .menu {
+    display: flex;
+    position: fixed;
+    right: 10px;
+    top: 15px;
+    background-color: #000000;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .menu img {
+    filter: invert(75%);
+    width: 35px;
+    height: 35px;
+  }
+
+  /*hamburger menu action styles*/
+  .menu img:active {
+    filter: invert(100%);
+  }
+
+  .menu img:hover {
+    filter: invert(100%);
+  }
 
 /*nav styles*/
 .nav-list .list-item a:hover {
@@ -657,10 +683,6 @@ nav > img {
   display: none;
 }
 
-.menu {
-  display: none;
-}
-
 /*Universal active class functionality (don't touch!)*/
 .active {
   display: block;
@@ -701,24 +723,6 @@ Mobile view styles
     border-top: 6px;
   }
 
-  /*hamburger styles*/
-  .menu {
-    display: flex;
-    position: fixed;
-    right: 10px;
-    top: 15px;
-    background-color: #000000;
-    outline: none;
-    cursor: pointer;
-    border: 0;
-  }
-
-  .menu img {
-    filter: invert(75%);
-    width: 35px;
-    height: 35px;
-  }
-
   .nav-list {
     width: 100%;
     text-align: center;
@@ -737,15 +741,6 @@ Mobile view styles
     margin-top: 10px;
   }
 
-  /*hamburger menu action styles*/
-  .menu img:active {
-    filter: invert(100%);
-  }
-
-  .menu img:hover {
-    filter: invert(100%);
-  }
-
   /*
   ===========================================================
   Home page styles (mobile view specific)
@@ -753,7 +748,7 @@ Mobile view styles
   */
 
   /*Hiding gallery and search links for mobile*/
-  .home-nav {
+  .home-list-item {
     display: none;
   }
 
@@ -1003,10 +998,19 @@ Computer view styles
     flex-direction: column;
     top: 0;
     left: 0;
-    height: 26em;
-    width: 14em;
+    width: 100%;
     padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .corner {
+    background: transparent;
+  }
+
+  .corner-content {
     border: 2px solid #aa14f0;
+    background: #000000;
   }
 
   .title-content {
@@ -1014,38 +1018,36 @@ Computer view styles
     padding-right: 0.5em;
   }
 
-  .sidebar {
-    border: 3px solid #aa14f0;
-    border-top: 5px solid #aa14f0;
-    height: 26em;
-  }
-
   .navbar {
-    display: flex;
-    flex-wrap: nowrap;
+    border-top: 0.3em;
+    margin-left: 53.7em;
+    position: relative;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
+    background-color: transparent;
+    height: 25em;
+    width: 10em;
   }
 
   .nav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0.5em;
+    background: #000000;
+    border: 3px solid #aa14f0;
+    border-top: 5px solid #aa14f0;
+    margin-bottom: 1em;
+    display: none;
   }
 
   .nav-list .list-item {
     display: block;
-    padding: 15px;
-    border-top: 1px;
+    padding: 15px; 
+    border-top: 1px; 
   }
 
   nav > ul > li {
     list-style: none;
-    margin: 0 5px;
+    margin: 0 0.5em;
   }
 
   main {
@@ -1069,28 +1071,31 @@ Computer view styles
     display: none;
   }
 
-  .home-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 35px;
+  .nav-list #gallery-computer.home-list-item {
+    border-top: 5px solid #aa14f0;
   }
 
-  .home-nav .list-item {
+  .nav-list .home-list-item {
     display: block;
+    padding-top: 0.5em;
     padding: 15px;
     border-top: 1px;
   }
 
-  .home-nav .list-item a:hover {
+  .nav-list #search-computer.home-list-item p{
+    /* padding: 0; */
+    margin: 0;
+    display: block;
+  }
+
+  .nav-list .home-list-item a:hover {
     color: #dddddd;
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
-  .home-nav .list-item a:active {
+  .nav-list .home-list-item a:active {
     color: #dddddd;
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
@@ -1304,6 +1309,11 @@ Computer view styles
     padding: 0 18px 1px;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
+  }
+
+  /*Universal active class functionality (don't touch!)*/
+  .active {
+    display: block;
   }
 }
 
