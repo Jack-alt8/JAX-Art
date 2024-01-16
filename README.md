@@ -25,6 +25,9 @@ git clone https://github.com/Jack-alt8/JAX-Art.git
 
 <h4 align="center"> Extra: </h4>
 
+* Wireframes:
+https://drive.google.com/drive/folders/1-la4RJOKdb31G641w26L3oOfAJjlTAVY
+
 This project includes art from unsplash, special thanks to: Alice Donovan Rouse, the Birmingham Museum Trust, Geordanna, Jason Leung, Joel Filipe, Maria Orlova, and Meric Dagli.
 
 * Alice Donovan Rouse - Hico Jill
