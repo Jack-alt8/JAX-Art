@@ -22,13 +22,13 @@ header {
   left: 0;
   width: 100%;
   background-color: black;
-  border: 3px solid #aa14f0;
-  padding: 10px;
+  border: 0.2rem solid #aa14f0;
+  padding: 0.6rem;
 }
 
 .navbar {
   background-color: black;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .corner {
@@ -46,38 +46,38 @@ header {
 
 .logo img {
   display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid transparent;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid transparent;
   border-radius: 50%;
-  margin: 5px;
+  margin: 0.3rem;
 }
 
 .logo {
   display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid transparent;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid transparent;
   border-radius: 50%;
-  margin: 0 7px 2px 0;
+  margin: 0 0.4rem 0.2rem 0;
 }
 
 .primary-icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   overflow: hidden;
   border-radius: 50%;
 }
 
 .title-content {
-  margin: 0 2px 2px;
+  margin: 0 0.1rem 0.1rem;
 }
 
 .main-title {
-  font-size: 18px;
+  font-size: 1.1rem;
   display: flex;
   padding-left: 0.19rem;
-  margin-top: 6px;
+  margin-top: 0.4rem;
 }
 
 .sub-nav {
@@ -89,7 +89,7 @@ header {
 }
 
 .sub-title {
-  font-size: 14px;
+  font-size: 0.9rem;
   display: flex;
 }
 
@@ -98,20 +98,20 @@ header {
 }
 
 .instagram {
-  height: 22px;
-  width: 22px;
+  height: 1.4rem;
+  width: 1.4rem;
   filter: invert(75%);
 }
 
 .youtube {
-  height: 22px;
-  width: 22px;
+  height: 1.4rem;
+  width: 1.4rem;
   filter: invert(75%);
 }
 
 .vsco {
-  height: 20px;
-  width: 20px;
+  height: 1.3rem;
+  width: 1.3rem;
   filter: invert(75%);
 }
 
@@ -123,7 +123,7 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
   list-style: none;
-  margin: 0 5px 0 5px;
+  margin: 0 0.3rem 0 0.3rem;
 }
 
 .nav-list {
@@ -132,7 +132,7 @@ nav > ul > li {
 
 .nav-list .list-item {
   display: inline-block;
-  padding: 20px 10px;
+  padding: 1.3rem 0.6rem;
 }
 
 .navbar a {
@@ -143,8 +143,8 @@ nav > ul > li {
 main {
   display: flex;
   margin-top: auto;
-  padding-top: 5em;
-  padding-bottom: 3em;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   min-height: 85%;
   overflow: hidden;
 }
@@ -163,7 +163,7 @@ div#home-content.home-content {
 .search {
   width: 100%;
   background: #df9ffd;
-  border: 0.2em solid #aa14f0;
+  border: 0.2rem solid #aa14f0;
   position: fixed;
 }
 
@@ -185,7 +185,7 @@ div#home-content.home-content {
 #search-wrapper > .search-item > input,
 button {
   list-style: none;
-  margin: 0 5px 0 5px;
+  margin: 0 0.3rem 0 0.3rem;
 }
 
 #search-wrapper {
@@ -193,7 +193,7 @@ button {
 }
 
 #search-wrapper .search-item {
-  padding: 0.2em;
+  padding: 0.2rem;
 }
 
 .searchbutton {
@@ -203,21 +203,21 @@ button {
 }
 
 .search-button img {
-  height: 3em;
-  width: 3em;
+  height: 3rem;
+  width: 3rem;
 }
 
 .searchbar {
   background-color: #7e0fb1;
-  border: 10px;
+  border: 0.6rem;
   width: 100%;
 }
 
 .search-item input.searchbar {
-  border: 10px;
-  padding: 0.5em;
+  border: 0.6rem;
+  padding: 0.5rem;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
@@ -236,9 +236,8 @@ button {
 .search-item input.searchbar::-webkit-search-cancel-button {
     -webkit-appearance: none;
     cursor: pointer;
-
-    height: 20px;
-    width: 20px;
+    height: 1.3rem;
+    width: 1.3rem;
     background-image: url("../icons/icons8-x-48.webp");
 }
 
@@ -254,11 +253,11 @@ button {
 
 /*search result styles*/
 div#result.search-item {
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 img#result-image.result-image {
-  padding: 0.1em;
+  padding: 0.1rem;
 }
 
 #result-artname-text,
@@ -268,15 +267,15 @@ img#result-image.result-image {
 #result-listened-to-text,
 #result-series-text {
   color: #313131;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.1em 0.5em;
-  bottom: 0.1em;
+  padding: 0.1rem 0.5rem;
+  bottom: 0.1rem;
   width: 100%;
 }
 
 #result-artname-text {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 
@@ -288,14 +287,14 @@ img#result-image.result-image {
 .listened-to-text,
 .series-text {
   color: #949494;
-  font-size: 0.9em;
-  padding: 0.1em 0.5em;
-  bottom: 0.1em;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.5rem;
+  bottom: 0.1rem;
   width: 100%;
 }
 
 .art-name-text {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -307,17 +306,17 @@ img#result-image.result-image {
 .artimages {
   display: flex;
   margin-top: auto;
-  padding-top: 5em;
+  padding-top: 5rem;
   align-items: center;
 }
 
 .artimages img {
-  height: 15em;
-  width: 15em;
+  height: 15rem;
+  width: 15rem;
 }
 
 p {
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.5rem 0 0.5rem 0;
   color: #cccccc;
 }
 
@@ -328,7 +327,7 @@ footer {
   bottom: 0;
   left: 0;
   width: auto;
-  padding: 10px;
+  padding: 0.6rem;
   background-color: #393939;
   color: #9d9d9d;
 }
@@ -340,7 +339,7 @@ footer {
 
 .github {
   display: block;
-  height: 30px;
+  height: 1.9rem;
   background-color: white;
   border-radius: 50%;
 }
@@ -351,20 +350,20 @@ Gallery page styles
 ==============================================================
 */
 .all-images {
-  margin-top: 3em;
-  padding: 3em;
+  margin-top: 3rem;
+  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 #image-wrapper.image-wrapper {
-  margin: 1em;
+  margin: 1rem;
   align-items: center;
 }
 
 .art-images {
-  height: 10em;
+  height: 10rem;
 }
 
 /*
@@ -373,65 +372,65 @@ About page styles
 ==============================================================
 */
 .about-content {
-  padding: 1em 1em 4em;
+  padding: 1rem 1rem 4rem;
 }
 
 h3.about-statement {
   color: #979797;
-  font-size: 1.5em;
-  margin-top: 1em;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   text-align: start;
 }
 
 .about-p {
-  padding: 1em;
+  padding: 1rem;
   width: 95%;
 }
 
 .about-p p {
   color: white;
-  text-indent: 3.1em;
+  text-indent: 3.1rem;
   text-align: left;
-  letter-spacing: 0.05em;
-  line-height: 1.2em;
-  word-spacing: 0.02em;
+  letter-spacing: 0.05rem;
+  line-height: 1.2rem;
+  word-spacing: 0.02rem;
   width: 100%;
 }
 
 article > p {
-  padding: 0.1em;
+  padding: 0.1rem;
 }
 
 p.opening-p#opening-p {
-  text-indent: 1em;
+  text-indent: 1rem;
 }
 
 h4.about-bio {
   color: #979797;
   font-size: 1.3em;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 h5 {
   color: #979797;
-  font-size: 1.1em;
-  margin: 1em 0 0 1em;
+  font-size: 1.1rem;
+  margin: 1rem 0 0 1rem;
 }
 
 nav.about-socials {
-  margin: 0.2em 0 0 0.9em;
+  margin: 0.2rem 0 0 0.9rem;
   position: static;
 }
 
 .about-socials img {
-  height: 3.1em;
-  width: 3em;
+  height: 3.1rem;
+  width: 3rem;
 }
 
 nav.about-socials img.instagram,
 nav.about-socials img.youtube {
-  height: 3.5em;
-  width: 3.5em;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .about-socials img:hover {
@@ -444,11 +443,11 @@ nav.about-socials img.youtube {
 
 aside,
 article {
-  padding: 0.1em;
+  padding: 0.1rem;
 }
 
 img > aside {
-  margin-top: 5em;
+  margin-top: 5rem;
   width: "device-width";
   height: "425px";
 }
@@ -464,7 +463,7 @@ Contact page styles
 */
 
 .contact-container {
-  padding: 0.1em;
+  padding: 0.1rem;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -473,22 +472,22 @@ Contact page styles
 form {
   display: flex;
   flex-direction: column;
-  padding: 2em 4em 4em;
+  padding: 2rem 4rem 4rem;
   width: 90%;
-  max-width: 600px;
+  max-width: 37.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 form h3 {
   color: #9d9d9d;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 1.3rem;
 }
 
 div.email-input,
 div.subject-input,
 div.message-input {
-  padding-top: 1.5em;
+  padding-top: 1.5rem;
 }
 
 div.input-info {
@@ -506,51 +505,51 @@ div.input-wrapper {
 label.placeholders {
   color: #797979;
   font-weight: bold;
-  padding-right: 0.5em;
+  padding-right: 0.5rem;
 }
 
 form input,
 form textarea {
-  border: 0.3em solid #393939;
-  border-radius: 0.94em;
-  margin: 10px 0;
-  padding: 0.5em;
+  border: 0.3rem solid #393939;
+  border-radius: 0.94rem;
+  margin: 0.6rem 0;
+  padding: 0.5rem;
   outline: none;
   background: #cccccc;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 form textarea {
-  height: 10em;
-  width: 20em;
+  height: 10rem;
+  width: 20rem;
 }
 
 form input:focus:required,
 form textarea:focus:required {
-  border: 0.3em solid #7e0fb1;
-  border-radius: 0.94em;
+  border: 0.3rem solid #7e0fb1;
+  border-radius: 0.94rem;
   background: #cccccc;
 }
 
 form div img {
   filter: invert(100%);
-  padding: 0.5em 0 0 0.5em;
+  padding: 0.5rem 0 0 0.5rem;
   display: none;
 }
 
 .submit-button {
-  padding: 15px;
+  padding: 0.9rem;
   background: #aa14f0;
   color: #181818;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600;
   border: 0;
   outline: none;
   cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 10px;
+  width: 9.3rem;
+  margin: 1.3rem auto 0;
+  border-radius: 0.6rem;
 }
 
 .submit-button:hover {
@@ -568,15 +567,15 @@ form div img {
 .message-length-error {
   color: #9d9d9d;
   display: block;
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .required-error,
 .email-error {
   color: red;
-  font-size: 16px;
-  letter-spacing: 0.063em;
-  margin-bottom: 0.1em;
+  font-size: 1rem;
+  letter-spacing: 0.063rem;
+  margin-bottom: 0.1rem;
   display: none;
 }
 
@@ -589,8 +588,8 @@ Button properties
   .menu {
     display: flex;
     position: fixed;
-    right: 10px;
-    top: 15px;
+    right: 0.6rem;
+    top: 0.9rem;
     background-color: #000000;
     outline: none;
     cursor: pointer;
@@ -599,8 +598,8 @@ Button properties
 
   .menu img {
     filter: invert(75%);
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   /*hamburger menu action styles*/
@@ -615,14 +614,14 @@ Button properties
 /*nav styles*/
 .nav-list .list-item a:hover {
   color: #dddddd;
-  padding: 0px 90px 7px;
+  padding: 0 5.6rem 0.4rem;
   border-bottom: 0.5rem solid #0030ff;
   border-radius: 10%;
 }
 
 .nav-list .list-item a:active {
   color: #dddddd;
-  padding: 0px 90px 7px;
+  padding: 0 5.6rem 0.4rem;
   border-bottom: 0.5rem solid #0030ff;
   border-radius: 10%;
 }
@@ -641,19 +640,19 @@ Button properties
 }
 
 nav > img {
-  margin: 0 5px;
+  margin: 0 0.3rem;
 }
 
 .logo img:hover {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border: solid #0030ff;
   border-radius: 50%;
 }
 
 .logo img:active {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   border: solid #0030ff;
   border-radius: 50%;
 }
@@ -699,46 +698,46 @@ Mobile view styles
   }
 
   header {
-    padding: 5px 0 0;
-    border: 3px solid #aa14f0;
+    padding: 0.3rem 0 0;
+    border: 0.2rem solid #aa14f0;
   }
 
   .corner {
-    padding-bottom: 5px;
+    padding-bottom: 0.3rem;
   }
 
   .corner-content {
-    padding-top: 2px;
+    padding-top: 0.1rem;
   }
 
   .nav-list {
-    border: 3px solid #aa14f0;
-    border-top: 6px solid #aa14f0;
-    padding: 0.5em;
+    border: 0.2rem solid #aa14f0;
+    border-top: 0.4rem solid #aa14f0;
+    padding: 0.5rem;
   }
 
   .navbar {
     flex-direction: column;
     position: relative;
-    border-top: 6px;
+    border-top: 0.4rem;
   }
 
   .nav-list {
     width: 100%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0.6rem;
     display: none;
   }
 
   .nav-list .list-item {
     display: block;
-    padding: 10px;
-    border-top: 1px;
+    padding: 0.6rem;
+    border-top: 0.1rem;
   }
 
   .primary-icon {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-left: 0.6rem;
+    margin-top: 0.6rem;
   }
 
   /*
@@ -773,7 +772,7 @@ Mobile view styles
   /*search styles*/
 
   div#search.search {
-    margin-top: 4em;
+    margin-top: 4rem;
   }
 
   #search-wrapper {
@@ -783,8 +782,8 @@ Mobile view styles
   .search-button {
     display: flex;
     position: fixed;
-    right: 50px;
-    top: 15px;
+    right: 3.1rem;
+    top: 0.9rem;
     background-color: #000000;
     outline: none;
     cursor: pointer;
@@ -793,23 +792,23 @@ Mobile view styles
 
   .search-button img {
     filter: invert(75%);
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
   }
 
   #search-wrapper {
-    padding: 0.5em;
-    border: 0.3em solid #aa14f0;
+    padding: 0.5rem;
+    border: 0.3rem solid #aa14f0;
   }
 
   #searchform.search-item {
     width: 100%;
-    padding: 0.3em;
+    padding: 0.3rem;
   }
 
   input#searchbar.searchbar {
     width: 100%;
-    padding: 0 0.4em;
+    padding: 0 0.4rem;
     margin-left: 0;
   }
 
@@ -820,14 +819,14 @@ Mobile view styles
 
   #search-wrapper {
     display: flex;
-    border: 3px solid #aa14f0;
-    border-top: 6px solid #aa14f0;
-    padding: 0.1em;
+    border: 0.2rem solid #aa14f0;
+    border-top: 0.4rem solid #aa14f0;
+    padding: 0.1rem;
   }
 
   #search-wrapper {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0.6rem;
   }
 
   div#search-wrapper {
@@ -835,7 +834,7 @@ Mobile view styles
   }
 
   #search-wrapper .search-item {
-    border-top: 1px;
+    border-top: 0.1rem;
   }
 
   .slideshow-container {
@@ -845,16 +844,16 @@ Mobile view styles
   .mobile-image-scroll {
     display: flex;
     flex-direction: column;
-    padding-top: 5em;
+    padding-top: 5rem;
     align-items: center;
   }
 
   #scroll-image-wrapper.image-wrapper {
-    padding: 1em;
+    padding: 1rem;
   }
 
   #scroll-image {
-    width: 16em;
+    width: 16rem;
     height: auto;
   }
 
@@ -865,19 +864,19 @@ Mobile view styles
   #scroll-date-created-text,
   #scroll-listened-to-text,
   #scroll-series-text {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   h5#scroll-art-name-text {
     margin-left: 0;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   /*gallery view*/
   .all-images {
     align-items: flex-start;
     margin-top: 0;
-    padding: 1em;
+    padding: 1rem;
   }
 
   #gallery-art-name-text,
@@ -886,14 +885,14 @@ Mobile view styles
   #gallery-date-created-text,
   #gallery-listened-to-text,
   #gallery-series-text {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-weight: 700;
-    padding: 0.05em 0.2em;
-    letter-spacing: 0.05em;
+    padding: 0.05rem 0.2rem;
+    letter-spacing: 0.05rem;
   }
 
   #gallery-art-image {
-    height: 5em;
+    height: 5rem;
     width: auto;
   }
 
@@ -907,8 +906,8 @@ Mobile view styles
   .gallery-view {
     display: flex;
     position: fixed;
-    right: 90px;
-    top: 15px;
+    right: 5.6rem;
+    top: 0.9rem;
     background-color: #000000;
     outline: none;
     cursor: pointer;
@@ -917,8 +916,8 @@ Mobile view styles
 
   .gallery-view img {
     filter: invert(75%);
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
   }
 
   .gallery-view img:active {
@@ -943,15 +942,15 @@ Mobile view styles
   ===========================================================
   */
   .about-statement{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   } 
   
   .about-bio {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .about-p {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   aside {
@@ -962,7 +961,7 @@ Mobile view styles
     max-width: 80%;
     max-height: 60%;
     width: "device-width";
-    height: "425px";
+    height: "26.6rem";
   }
 
   /*
@@ -971,15 +970,15 @@ Mobile view styles
   ============================================================
   */
   form#contact-form {
-    padding: 32px 0;
+    padding: 2rem 0;
   }
 
   p.email-check-text, p.email-error, p.message-length-error {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 
   textarea#message {
-    width: 16em;
+    width: 16rem;
   }
 
   /*Universal active class functionality (don't touch!)*/
@@ -1009,51 +1008,51 @@ Computer view styles
   }
 
   .corner-content {
-    border: 2px solid #aa14f0;
+    border: 0.1rem solid #aa14f0;
     background: #000000;
   }
 
   .title-content {
-    margin-top: 2px;
-    padding-right: 0.5em;
+    margin-top: 0.1rem;
+    padding-right: 0.5rem;
   }
 
   .navbar {
-    border-top: 0.3em;
-    margin-left: 53.7em;
+    border-top: 0.3rem;
+    margin-left: 53.7rem;
     position: relative;
     flex-direction: column;
     background-color: transparent;
-    height: 25em;
-    width: 10em;
+    height: 25rem;
+    width: 10rem;
   }
 
   .nav-list {
     text-align: center;
     width: 100%;
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
     background: #000000;
-    border: 3px solid #aa14f0;
-    border-top: 5px solid #aa14f0;
-    margin-bottom: 1em;
+    border: 0.2rem solid #aa14f0;
+    border-top: 0.3rem solid #aa14f0;
+    margin-bottom: 1rem;
     display: none;
   }
 
   .nav-list .list-item {
     display: block;
-    padding: 15px; 
-    border-top: 1px; 
+    padding: 0.9rem; 
+    border-top: 0.1rem; 
   }
 
   nav > ul > li {
     list-style: none;
-    margin: 0 0.5em;
+    margin: 0 0.5rem;
   }
 
   main {
     width: 70%;
-    margin-left: 14em;
-    padding: 3em 0 5em;
+    margin-left: 14rem;
+    padding: 3rem 0 5rem;
     top: 0;
     right: 0;
     margin-top: auto;
@@ -1072,32 +1071,32 @@ Computer view styles
   }
 
   .nav-list #gallery-computer.home-list-item {
-    border-top: 5px solid #aa14f0;
+    border-top: 0.3rem solid #aa14f0;
   }
 
   .nav-list .home-list-item {
     display: block;
-    padding-top: 0.5em;
-    padding: 15px;
-    border-top: 1px;
+    padding-top: 0.5rem;
+    padding: 0.9rem;
+    border-top: 0.1rem;
   }
 
   .nav-list #search-computer.home-list-item p{
-    /* padding: 0; */
+    padding: 0; 
     margin: 0;
     display: block;
   }
 
   .nav-list .home-list-item a:hover {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
   .nav-list .home-list-item a:active {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
@@ -1110,25 +1109,25 @@ Computer view styles
     width: auto;
     justify-content: center;
     padding-top: 0;
-    padding-bottom: 6em;
+    padding-bottom: 6rem;
   }
 
   /*search styles*/ 
   div#search.search {
-    margin-left: 0.2em;
+    margin-left: 0.2rem;
     width: 90%;
   }
 
   .search-button img {
-    height: 4em;
-    width: 4em;
+    height: 4rem;
+    width: 4rem;
   }
 
   div#search-wrapper {
-    padding: 0.3em;
-    border: 0.3em solid #aa14f0;
+    padding: 0.3rem;
+    border: 0.3rem solid #aa14f0;
     width: auto;
-    padding-top: 10px;
+    padding-top: 0.6rem;
   }
 
   div#searchform.search-item {
@@ -1137,7 +1136,7 @@ Computer view styles
 
   input#searchbar.searchbar {
     width: 75%;
-    padding: 0 0.4em;
+    padding: 0 0.4rem;
     margin-left: 0;
   }
 
@@ -1149,13 +1148,13 @@ Computer view styles
   /* Slideshow container */
   .slideshow-container {
     max-width: 100%;
-    margin: 0.5em;
+    margin: 0.5rem;
     overflow-x: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0;
-    padding-top: 5em;
+    padding-top: 5rem;
     height: auto;
   }
 
@@ -1169,19 +1168,19 @@ Computer view styles
   }
 
   #scroll-image-wrapper.image-wrapper {
-    padding: 0.5em auto;
+    padding: 0.5rem auto;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
   #slide-image {
-    max-width: 24em;
-    height: 20em;
+    max-width: 24rem;
+    height: 20rem;
   }
 
   div.slide-description {
-    padding-top: 2em;
+    padding-top: 2rem;
     text-align: center
   }
 
@@ -1200,67 +1199,66 @@ Computer view styles
   }
 
   /* Next & previous buttons */
-  .prev,
-  .next {
+  .slideButton#next, .slideButton#prev {
     cursor: pointer;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 0.5em;
+    margin-top: -1.4rem;
+    padding: 0.5rem;
     color: rgb(68, 68, 68);
     background-color: transparent;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
     transition: 0.6s ease;
-    border: 0px;
-    border-radius: 0 3px 3px 0;
+    border: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
     user-select: none;
   }
 
   /* Position the "next button" to the right */
-  .next {
+  .slideButton#next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0.2rem 0 0 0.2rem;
   }
 
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+  .slideButton#prev#prev:hover,
+  .slideButton#next#next:hover {
     color: rgba(190, 190, 190, 0.8);
   }
 
   /* Number text (1/12 etc) */
   .numbertext {
     color: #979797;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
     top: 0;
   }
 
   /*home button styles*/
   button.search-word-button {
-    padding-right: 1.2em;
-    border: 10px;
+    padding-right: 1.2rem;
+    border: 0.6rem;
     width: 100%;
     color: #585858;
     background: #000000;
   }
 
   button.search-word-button p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #585858;
   }
 
   button.search-word-button p:hover {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
   button.search-word-button p:active {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
@@ -1272,7 +1270,7 @@ Computer view styles
   */
   div.all-images {
     margin-top: 0;
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
   }
 
   /*
@@ -1293,20 +1291,20 @@ Computer view styles
     max-width: 80%;
     max-height: 60%;
     width: "device-width";
-    height: "425px";
+    height: "26.6rem";
   }
 
   /*nav styles*/
   .nav-list .list-item a:hover {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
   .nav-list .list-item a:active {
     color: #dddddd;
-    padding: 0 18px 1px;
+    padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
@@ -1330,7 +1328,7 @@ Tablet styles
   */
 
   .home-main {
-    padding-bottom: 40em;
+    padding-bottom: 40rem;
   }
 
   /*
@@ -1339,7 +1337,7 @@ Tablet styles
   ========================================================
   */
   .contact-main {
-    padding-bottom: 23em;
+    padding-bottom: 23rem;
   }
 }
 
@@ -1375,21 +1373,21 @@ Very thin devices' (like the galaxy fold) styles
 
 @media all and (min-width: 0px) and (max-width: 320px) {
   h1.main-title {
-    font-size: 15px;
+    font-size: 1.9rem;
   }
 
   h2.sub-title {
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 
   img.instagram, img.youtube {
-    width: 17px;
-    height: 17px;
+    width: 1.1rem;
+    height: 1.1rem;
   }
 
   img.vsco {
-    width: 15px;
-    height: 15px;
+    width: 1.9rem;
+    height: 1.9rem;
   }
 
   div.mobile-buttons-nav {
@@ -1406,8 +1404,8 @@ Very thin devices' (like the galaxy fold) styles
   }
 
   .mobile-buttons-nav button img {
-    height: 25px;
-    width: 25px;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   
 }
