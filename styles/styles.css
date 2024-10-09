@@ -1019,11 +1019,11 @@ Computer view styles
 
   .navbar {
     border-top: 0.3rem;
-    margin-left: 53.7rem;
+    margin-left: 68.3rem;
     position: relative;
     flex-direction: column;
     background-color: transparent;
-    height: 25rem;
+    height: 27rem;
     width: 10rem;
   }
 
@@ -1034,7 +1034,7 @@ Computer view styles
     background: #000000;
     border: 0.2rem solid #aa14f0;
     border-top: 0.3rem solid #aa14f0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: none;
   }
 
@@ -1082,19 +1082,22 @@ Computer view styles
   }
 
   .nav-list #search-computer.home-list-item p{
-    padding: 0; 
+    font-size: 1rem;
+    border-bottom: 0.6rem solid transparent;
     margin: 0;
     display: block;
   }
 
-  .nav-list .home-list-item a:hover {
+  .nav-list .home-list-item a:hover, 
+  .nav-list #search-computer.home-list-item p:hover {
     color: #dddddd;
     padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
     border-radius: 10%;
   }
 
-  .nav-list .home-list-item a:active {
+  .nav-list .home-list-item a:active, 
+  .nav-list #search-computer.home-list-item p:hover {
     color: #dddddd;
     padding: 0 1.1rem 0.1rem;
     border-bottom: 0.5rem solid #0030ff;
