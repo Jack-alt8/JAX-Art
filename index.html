@@ -24,13 +24,13 @@
                     <div class="sub-nav">
                         <h2 class="sub-title">JAX Art</h2>
                         <nav class="contact-content">
-                            <a href="//www.instagram.com/jackc.baylor"><img class="instagram"
+                            <a href="//www.instagram.com/jackc.baylor" rel="noreferrer" target="_blank"><img class="instagram"
                                     src="icons/icons8-instagram-24.webp" width="17" height="17"
                                     alt="Follow me on Instagram"></a>
-                            <a href="//www.youtube.com/@jackbaylor1926"><img class="youtube"
+                            <a href="//www.youtube.com/@jackbaylor1926" rel="noreferrer" target="_blank"><img class="youtube"
                                     src="icons/icons8-youtube-24 (1).webp" width="17" height="17"
                                     alt="Follow me on YouTube"></a>
-                            <a href="//vsco.co/jack-c-baylor"><img class="vsco" src="icons/icons8-vsco-50.webp"
+                            <a href="//vsco.co/jack-c-baylor" rel="noreferrer" target="_blank"><img class="vsco" src="icons/icons8-vsco-50.webp"
                                     width="15" height="15" alt="Follow me on VSCO"></a>
                         </nav>
                     </div>
@@ -105,199 +105,37 @@
                     <p id="result-series-text" class="series-text"></p>
                 </div>
             </div>
-            <!--Image slider for viewing artimages-->
-            <div class="slideshow-container">
-                <button id="prev" class="prev">&#10094;</button>
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides">
-                    <div class="numbertext">1 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/alice-donovan-rouse-unsplash.webp"
+            <section aria-label="Newest Art Photos">
+                <div class="carousel">
+                    <button id="previousButton" class="slideButton">&#10094;</button>
+                    <button id="nextButton" class="slideButton">&#10095;</button>
+                    <div id="artslides" class="slides">
+                            <p id="slide-number" class="slide-number">1/2</p>
+                            <img id="slide-image" class="art-images" src="artimages/alice-donovan-rouse-unsplash.webp" 
                             width="384" height="320" alt="Hico Jill collage image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Hico Jill</p>
-                            <p id="size-text" class="size-text">600px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Collage</p>
-                            <p id="date-created-text" class="date-created-text">01/03/20</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
+                            <div class="art-description">
+                                <p id="art-name-text" class="art-name-text"></p>
+                                <p id="size-text" class="size-text"></p>
+                                <p id="type-of-art-text" class="type-of-art-text"></p>
+                                <p id="date-created-text" class="date-created-text"></p>
+                                <p id="series-text" class="series-text"></p>
+                            </div>
+                    </div>
+                    <div id="artslides" class="slides">
+                        <p id="slide-number" class="slide-number">2/2</p>
+                        <img id="slide-image" class="art-images" src="artimages/birmingham-museums-trust-field-unsplash.webp" width="384"
+                                height="320" alt="">
+                        <div class="art-description">
+                            <p id="art-name-text" class="art-name-text"></p>
+                            <p id="size-text" class="size-text"></p>
+                            <p id="type-of-art-text" class="type-of-art-text"></p>
+                            <p id="date-created-text" class="date-created-text"></p>
+                            <p id="series-text" class="series-text"></p>
                         </div>
                     </div>
                 </div>
-                <div class="mySlides">
-                    <div class="numbertext">2 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-field-unsplash.webp" width="384" height="320"
-                            alt="Grain field Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Grain fields</p>
-                            <p id="size-text" class="size-text">800px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/07/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">3 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-mountain-path-unsplash.webp" width="384"
-                            height="320" alt="Mountain path Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Mountain Path</p>
-                            <p id="size-text" class="size-text">600px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/10/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">4 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-mountain-river-unsplash.webp" width="213"
-                            height="320" alt="Mountain River Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Mountain River</p>
-                            <p id="size-text" class="size-text">200px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/13/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">5 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-mountain-waterfall-unsplash.webp" width="227"
-                            height="320" alt="Mountain Waterfall Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Mountain Waterfall</p>
-                            <p id="size-text" class="size-text">200px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/15/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">6 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-trees-unsplash.webp" width="268" height="320"
-                            alt="Faded trees Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Faded trees</p>
-                            <p id="size-text" class="size-text">250px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/27/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">7 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images"
-                            src="../artimages/birmingham-museums-trust-sheep-herder-unsplash.webp" width="249"
-                            height="320" alt="Sheep Herder Landscape image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Sheep Herder</p>
-                            <p id="size-text" class="size-text">250px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Landscape</p>
-                            <p id="date-created-text" class="date-created-text">11/20/21</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">Birmingham series</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">8 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/geordanna-spirit-unsplash.webp"
-                            width="258" height="320" alt="Spirit Painting image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Spirit</p>
-                            <p id="size-text" class="size-text">250px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Painting/ Abstract art</p>
-                            <p id="date-created-text" class="date-created-text">04/24/22</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">9 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/jason-leung-unsplash.webp"
-                            width="213" height="320" alt="Love the Corner artistic photo">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Love the Corner</p>
-                            <p id="size-text" class="size-text">200px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Photography</p>
-                            <p id="date-created-text" class="date-created-text">09/30/23</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">10 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/joel-filipe-unsplash.webp"
-                            width="253" height="320" alt="Sun splash digital art image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Sun Splash</p>
-                            <p id="size-text" class="size-text">250px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Digital art</p>
-                            <p id="date-created-text" class="date-created-text">10/01/23</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">11 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/maria-orlova-unsplash.webp"
-                            width="213" height="320" alt="Purple foam painting image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">Purple Foam</p>
-                            <p id="size-text" class="size-text">200px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Painting/ Abstract art</p>
-                            <p id="date-created-text" class="date-created-text">10/28/23</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="mySlides">
-                    <div class="numbertext">12 / 12</div>
-                    <div id="image-wrapper" class="image-wrapper">
-                        <img id="slide-image" class="art-images" src="../artimages/meric-dagli-unsplash.webp"
-                            width="213" height="320" alt="True feeling digital art image">
-                        <div class="slide-description">
-                            <p id="art-name-text" class="art-name-text">True Feeling</p>
-                            <p id="size-text" class="size-text">200px by 400px</p>
-                            <p id="type-of-art-text" class="type-of-art-text">Digital art/ Abstract art</p>
-                            <p id="date-created-text" class="date-created-text">11/09/23</p>
-                            <p id="listened-to-text" class="listened-to-text"></p>
-                            <p id="series-text" class="series-text">/</p>
-                        </div>
-                    </div>
-                </div>
-                <button id="next" class="next">&#10095;</button>
-            </div>
-
+            </section>
+            
             <div class="mobile-image-scroll">
                 <div id="scroll-image-wrapper" class="image-wrapper">
                     <img id="scroll-image" class="art-images" src="../artimages/alice-donovan-rouse-unsplash.webp"
@@ -432,7 +270,7 @@
     <footer>
         <p id="copyright" class="copyright"></p>
         <nav class="circle">
-            <a href="https://github.com/">
+            <a href="https://github.com/" rel="noreferrer" target="_blank">
                 <img class="github" src="icons/noun-github-4289652.webp" width="30" height="30"
                     alt="Follow Jack/alt8 on GitHub">
             </a>
